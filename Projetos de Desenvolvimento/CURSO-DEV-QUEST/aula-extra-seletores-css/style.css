@@ -1,0 +1,55 @@
+#header{
+    color: red;
+}
+
+.container {
+    border: 1px solid;
+}
+
+p{
+    font-size: 20px;
+}
+
+p:after{
+    content: "=>";
+    background-color: red;
+}
+
+p:before{
+    content: "<=";
+    background-color: blue;
+}
+
+div span {
+    color: blueviolet;
+}
+
+h2 + p {
+    color: chartreuse;
+}
+
+h2 ~ p{
+    color: aqua;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: yellow;
+}
+
+p[data-title]{
+    background-color: brown;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*div > p{
+    background-color: red;
+} (retire os comentarios para ver)*/

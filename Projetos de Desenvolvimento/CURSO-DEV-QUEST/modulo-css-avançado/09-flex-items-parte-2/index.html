@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Items - Flex - Order - Align Self</title>
+    <link rel="stylesheet" href="../07-flex-container-parte-2/css/globals.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Flex Items - Flex - Order - Align Self</h1>
+
+    <section>
+        <h2>Flex</h2>
+        <p>A propriedade <strong>FLEX</strong> em flexbox é uma propriedade abreviada que combina as propriedades <strong>FLEX-GROW</strong>, <strong>FLEX-SHRINK</strong>, e <strong>FLEX-BASIS</strong> em uma única declaração.</p>
+        <div class="container flex-exemplo wrap">
+            <div class="item flex-1"> Lorem ipsum.</div>
+            <div class="item flex-1"> Lorem ipsum dolor.</div>
+            <div class="item flex-1"> Lorem ipsum dolor, sit amet.</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Order</h2>
+        <p>A propriedade <strong>ORDER</strong> é usada para controlar a ordem de exibição dos elementos filhos (itens) dentro de um container flexível (elemento pai) quando eles são renderizados na tela. Essa propriedade permite que você reorganize visualmente a ordem dos itens sem alterar a estrutura do HTML.</p>
+
+        <div class="container order">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+            <div class="item item4">4</div>
+            <div class="item item5">5</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Align Self</h2>
+        <p>A propriedade align-self é usada para controlar a posição vertical de um único item flex dentro de um container flexível. Ela substitui a configuração de alinhamento vertical definida pelo container para um item específico, permitindo que você ajuste a posição vertical de um item individualmente, sem afetar os outros itens no mesmo container. Isso é especialmente útil quando você deseja que um item se comporte de forma diferente dos demais.</p>
+
+        <h3>Auto</h3>
+        <p>Valor padrão, ou seja se não estilizar nada será ele o valor inicial</p>
+        <div class="container align-self auto">
+            <div class="item item1">1</div>
+            <div class="item item2">Lorem ipsum, dolor sit amet consect</div>
+            <div class="item item3">3</div>
+            <div class="item item4">4</div>
+            <div class="item item5">5</div>
+        </div>
+
+        <h3>Flex Start</h3>
+        <p>Alinha o item no início do container flexível.</p>
+        <div class="container align-self start">
+            <div class="item item1">1</div>
+            <div class="item item2">Lorem ipsum, dolor sit amet consect</div>
+            <div class="item item3">3</div>
+            <div class="item item4">4</div>
+            <div class="item item5">5</div>
+        </div>
+
+        <h3>Flex End</h3>
+        <p>Alinha o item no final do container flexível.</p>
+        <div class="container align-self end">
+            <div class="item item1">1</div>
+            <div class="item item2">Lorem ipsum, dolor sit amet consect</div>
+            <div class="item item3">3</div>
+            <div class="item item4">4</div>
+            <div class="item item5">5</div>
+        </div>
+
+        <h3>Center</h3>
+        <p>Centraliza o item verticalmente no container.</p>
+        <div class="container align-self center">
+            <div class="item item1">1</div>
+            <div class="item item2">Lorem ipsum, dolor sit amet consect</div>
+            <div class="item item3">3</div>
+            <div class="item item4">4</div>
+            <div class="item item5">5</div>
+        </div>
+
+        <h3>Stretch</h3>
+        <p>O item se esticará para preencher a altura do container (valor padrão).</p>
+        <div class="container align-self stretch">
+            <div class="item item1">1</div>
+            <div class="item item2">Lorem ipsum, dolor sit amet consect</div>
+            <div class="item item3">3</div>
+            <div class="item item4">4</div>
+            <div class="item item5">5</div>
+        </div>
+
+
+    </section>
+
+</body>
+</html>

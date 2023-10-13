@@ -1,0 +1,31 @@
+/* seletor: pseudo-classe {
+    propriedade: valor;
+} */
+
+/* p:first-child {
+    color: aquamarine;
+}
+
+p:last-child {
+    color: blueviolet;
+}
+
+p:not(.padrao) {
+    color: yellow;
+} */
+
+/* p:nth-child(even) {
+    color: red;
+} */
+
+/* li:nth-child(odd) {
+    color: blue;
+} */
+
+li:nth-last-child(1) {
+    color: blueviolet;
+}
+
+p:only-child {
+    color: yellowgreen;
+}

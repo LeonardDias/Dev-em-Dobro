@@ -1,0 +1,17 @@
+.fa-instagram-square {
+color: pink;
+font-size: 50px;
+}
+
+.fa-instagram-square:hover {
+    color: red;
+}
+
+.fa-facebook-square {
+    color: lightskyblue;
+    font-size: 50px;
+}
+
+.fa-facebook-square:hover {
+    color: red;
+}

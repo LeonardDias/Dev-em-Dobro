@@ -1,0 +1,9 @@
+        h2 { /*VAI TRANSFORMAR TODOS OS H2 PARA O FORMATO QUE FOR ESCOLHIDO AQUI*/
+            background-color: blue;
+            color: aliceblue;
+        }
+
+        p { /*VAI TRANSFORMAR TODOS OS P PARA O FORMATO QUE FOR ESCOLHIDO AQUI*/
+            color: blueviolet;
+            font-size: 24px;
+        }

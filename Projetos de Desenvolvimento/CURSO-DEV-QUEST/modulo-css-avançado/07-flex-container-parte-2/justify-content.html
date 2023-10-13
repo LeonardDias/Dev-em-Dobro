@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Container - Justify content</title>
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/justify-content.css">
+</head>
+<body>
+    <h1>Flex Container - Justify content</h1>
+    <p>A propriedade justify-content é usada para alinhar os itens (itens flexíveis) dentro de um contêiner flexível ao longo do eixo principal (main axis). O eixo principal pode ser horizontal (quando a flex-direction é row) ou vertical (quando a flex-direction é column). Existem várias opções de alinhamento disponíveis para a propriedade justify-content.</p>
+
+    <section>
+        <h2>Flex-start</h2>
+        <p>Alinha os itens no início do eixo principal.</p>
+
+        <div class="container flex-start">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Flex-end</h2>
+        <p>Alinha os itens no final do eixo principal.</p>
+
+        <div class="container flex-end">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Center</h2>
+        <p>Centraliza os itens ao longo do eixo principal.</p>
+
+        <div class="container center">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Space-between</h2>
+        <p>Distribui os itens ao longo do eixo principal, deixando espaços iguais entre eles. O primeiro item fica no início e o último no final.</p>
+
+        <div class="container space-between">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Space-around</h2>
+        <p>Distribui os itens ao longo do eixo principal, deixando espaços iguais ao redor deles. Isso significa que há espaço extra tanto no início quanto no final, bem como entre os itens.</p>
+
+        <div class="container space-around">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Space-evenly</h2>
+        <p>Distribui os itens ao longo do eixo principal com espaços iguais entre eles e também nas extremidades.</p>
+
+        <div class="container space-evenly">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+        </div>
+    </section>
+</body>
+</html>

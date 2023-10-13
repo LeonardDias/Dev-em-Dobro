@@ -1,0 +1,42 @@
+/* seletor::pseudo-elemento {
+    propriedade: valor;
+} */
+
+.first-letter::first-letter {
+    color: coral;
+    font-size: 100px;
+}
+
+.first-line::first-line {
+    color: coral
+}
+
+.first-line::first-letter {
+    color: blue;
+}
+
+li::marker {
+    color: red;
+    font-size: 23px;
+
+}
+
+.before::before {
+    /* content: url(./images/coração1.png); */
+    /* Você tambem pode usar desta forma para ter mais opções de trabalho */
+    content: "";
+    background: url(./images/coração1.png) center center no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.after::after {
+    content: url(./images/coração2.png);
+    /* Você tambem pode usar desta forma para ter mais opções de trabalho */
+    /* content: "";
+    background: url(./images/coração2.png) center center no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 24px; */
+}

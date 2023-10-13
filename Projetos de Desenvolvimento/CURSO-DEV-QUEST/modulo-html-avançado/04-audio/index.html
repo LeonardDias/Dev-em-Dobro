@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <h1>Audio</h1>
+
+    <!-- <audio src="audios/audio.mp3" controls autoplay preload="none"></audio> NESTE CASO É A FORMA ANTIGA DE SE USAR E NEM TODO BROWSER UTILIZA OS AUDIOS EM FORMATO .OGG-->
+
+    <!-- FORMA CORRETA DE SE UTLIZAR -->
+
+    <audio controls>
+        <source src="audios/audio.ogg" type="audio/ogg">
+        <source src="audios/audio.mp3" type="audio/mp3">
+        <source src="audios/audio.wav" type="audio/wav">
+        <p>Seu navegador não tem suporte a TAG audio</p>
+    </audio>
+</body>
+</html>

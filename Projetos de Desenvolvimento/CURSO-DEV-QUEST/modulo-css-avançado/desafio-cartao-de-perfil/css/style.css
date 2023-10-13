@@ -1,0 +1,64 @@
+main {
+    background-color: var(--background-color);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    width: 330px;
+    height: 380px;
+}
+
+.foto {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    width: 100%;
+}
+
+.local {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.informacao-social {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-top: 3px solid var(--card-color);
+    text-align: center;
+    padding: 30px;
+}
+
+
+.colorfonts, .local {
+    color: var(--card-color);
+    font-weight: 700;
+}
+
+
+.cartao .informacao-cartao,
+.cartao .informacao-cartao .nome,
+.cartao .informacao-cartao .idade,
+.cartao .informacao-cartao .local,
+.cartao .informacao-social {
+    background-color: white;
+}
+

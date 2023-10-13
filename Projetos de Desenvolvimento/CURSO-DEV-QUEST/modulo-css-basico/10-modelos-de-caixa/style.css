@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+}
+
+h1 {
+    margin: 50px;
+    border: solid 20px;
+    border-color: gold red;
+    padding: 30px;
+
+
+}
+p {
+    margin: 20px;
+    padding: 20px;
+    border: solid 10px;
+    border-color: green pink;
+    background-color: black;
+    color: aliceblue;
+}

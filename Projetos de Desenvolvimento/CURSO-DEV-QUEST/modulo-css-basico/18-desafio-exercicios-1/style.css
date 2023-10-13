@@ -1,0 +1,12 @@
+h1 {
+    border: solid 10px;
+    border-color: blue gold;
+    display: inline-block;
+}
+
+#total{
+    border: solid 1px green;
+    display: inline-block;
+    background-color: brown;
+    color: aliceblue;
+}

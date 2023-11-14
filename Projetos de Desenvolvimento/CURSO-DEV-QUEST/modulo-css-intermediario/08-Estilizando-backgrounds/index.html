@@ -1,40 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estilizando backgrounds</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>Estilizando backgrounds</h1>
 
     <h2>Background image</h2>
     <div class="bg bg-image">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro quas laudantium eveniet numquam qui perspiciatis reiciendis magni corrupti quo suscipit earum odio vel repudiandae, nulla laboriosam iure inventore ullam ratione.</p>
+      <p>
+        Aqui temos como exemplo o Background-image com largura e altura e o
+        fundo verde, porém não irá aparecer pois o mesmo está coberto pela
+        imagem.
+      </p>
     </div>
 
     <h2>Background repeat</h2>
     <div class="bg bg-repeat">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident distinctio impedit fugiat nam, sed omnis beatae, numquam deleniti eligendi alias sint ab eos porro ipsa itaque eius, veniam labore dicta.</p>
-
+      <p>
+        Aqui temos como exemplo o Background-image com altura e com o
+        Background-repeat: no-repeat, pois sem essa opçãop a imagem ia se
+        repetir no eixo X e Y varias vezes.
+      </p>
     </div>
 
     <h2>Background size cover</h2>
     <div class="bg bg-size-cover">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore enim amet adipisci doloribus laboriosam possimus tempore, deleniti praesentium unde labore. Dolores nemo aperiam minus architecto! Assumenda incidunt aliquid maxime doloribus.</p>
+      <p>
+        Aqui temos como exemplo o Background-image com a opção de
+        Background-size: cover, pois assim a imagem irá cobrir todo o conteudo
+        do espaço da tela, lembrando que você deve dar uma altura para ela.
+      </p>
     </div>
 
     <h2>Background fixed</h2>
     <div class="bg bg-fixed">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iste exercitationem tempore quidem excepturi beatae incidunt? Voluptatibus tempora consequatur exercitationem libero amet! Illum neque pariatur dignissimos perspiciatis quod, ipsa tenetur!</p>
+      <p>
+        Aqui temos como exemplo o Background-image com a opção de
+        Background-attachment: fixed, dessa forma irá criar o efeito parallax e a imagem ficará grudada na tela e o conteúdo ira rolar para baixo
+        normalmente. Lembrando que você deve dar uma altura para ela.
+      </p>
     </div>
 
     <h2>Background position</h2>
     <div class="bg bg-position">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto rerum impedit obcaecati vero molestias modi, molestiae distinctio at suscipit, debitis quos a possimus harum corporis nulla nisi. Sit, repellendus quia!</p>
+      <p>
+        Aqui temos como exemplo o Background-image com a opção de
+        Background-position: bottom right com a opção de no-repeat também ativa. Lembrando que você deve dar uma altura para ela e colocar o no-repeat.
+      </p>
     </div>
 
-    
-</body>
+    <h2>Background Shorthand</h2>
+        <div class="bg bg-shorthand">
+            <p>
+                Aqui temos como exemplo o Background com a opção de SHORTHAND, ou seja a versão resumida de atributos e valores do seletor Background. Colocando tudo em apenas uma linha, respeitando a seguinte ordem: color, imagem url, repeat e position. Neste caso: background: black url('./images/cat.png') no-repeat right top; 
+            </p>
+        </div>
+  </body>
 </html>

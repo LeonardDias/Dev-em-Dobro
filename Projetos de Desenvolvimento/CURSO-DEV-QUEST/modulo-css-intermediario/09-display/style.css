@@ -10,6 +10,10 @@ ul {
 .em-bloco li {
     background: aqua;
     margin-bottom: 10px;
+    /* width: 100px; */
+}
+
+.em-bloco li:nth-child(1) {
     width: 100px;
 }
 
@@ -25,6 +29,14 @@ ul {
     height: 100px;
 }
 
+.em-linha-e-bloco li:nth-child(2) {
+    width: 300px;
+    height: 300px;
+}
+
 .esconder {
     display: none;
+    background: aqua;
+    width: 100px;
+    height: 100px;
 }

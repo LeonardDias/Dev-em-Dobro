@@ -1,21 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Position, static, relative e absolute</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>Position static, relative e absolute</h1>
-<br>
-    <div class="elemento elemento-estatico">static</div>
-    <div class="elemento elemento-relativo">relative</div>
-    <div class="elemento elemento-absoluto">absolute</div>
-    <div class="elemento elemento-estatico">outro elemento estático</div>
-    <div class="elemento elemento-relativo-com-pai">relative com o pai
-        <div class="elemento elemento-absoluto-com-filho">absolute com filho
-        </div>
+    <h2>Aqui iremos aprender sobre a propriedade POSITION e seus valores, então atenção.</h2>
+    <br />
+
+    <div class="elemento elemento-estatico">
+      <p>
+        STATIC: Esse é o valor padrão de qualquer propriedade. E ele fica
+        travado na tela.
+      </p>
     </div>
-</body>
+    <div class="elemento elemento-relativo">
+      <p>
+        RELATIVE: Por o static acima ser um block level ele foi criado abaixo,
+        porém mudando para o POSITION: RELATIVE podemos alocar ele em qualquer
+        lugar da TELA, bastando utilizar o TOP, RIGHT, BOTTOM e o LEFT. E ele
+        vai ficar alocado onde iremos definir a sua posição mediante ao display
+        que ele for neste caso BLOCK.
+      </p>
+    </div>
+    <div class="elemento elemento-absoluto">
+        <p>
+            ABSOLUTE: Neste caso você irá poder colocar em qualquer posição da tela com os comandos TOP, RIGHT, BOTTOM e o LEFT e ele também ira se sobressair sobre os outros elementos da tela, ficando a frente dos outros em uma outra camada. 
+        </p>
+    </div>
+    <div class="elemento elemento-estatico">
+        <p>
+            Aqui é só outro STATIC para exemplo do ABSOLUTE.
+        </p>
+    </div>
+    <div class="elemento elemento-relativo-com-pai">
+      <p>
+        Relative como sendo o PAI para dar o exemplo de como coloar o ABSOLUTE travado dentro desta DIV.
+      </p>
+      <div class="elemento elemento-absoluto-com-filho"><p>Aqui colocamos o ABSOLUTE como FILHO e travamos ele dentro do RELATIVE PAI.</p></div>
+    </div>
+  </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +8,38 @@
     <link rel="stylesheet" href="reset.css">
 </head>
 <body>
+    <p>
+        Aqui abaixo temos a centralização de um elmento utilizando o TEXT-ALIGN: CENTER, porém ela possui uma disvantagem que precisa utilizar o LINE-HEIGHT com o mesmo tamanho que o HEIGHT e isso causa conflitos futuros. 
+    </p>
+    <br>
     <div class="texto-centralizado-1">Texto centralizado</div>
-
+    <br>
+    <p>
+        Aqui temos a centralização utilizando o uma DIV CONTAINER e dentro dela um PARAGRAFO centralizado com um POSITION ABSOLUTE, TOP e LEFT 50% e um TRANSFORM: TRANSLATE -50%, -50%. Duvidas sobre TRANSFORM: TRANSLATE da uma olhada na apostila do GUANABARA que explica melhor.
+    </p>
+    br
     <div class="container">
         <p class="texto-centralizado-2">Texto centralizado</p>
     </div>
 
+    <br>
+
+    <p>
+        Aqui temos a centralização de um botão utilizando o o MARGIN: AUTO. Lembre-se de ver qual é o tipo de level, como button é INLINE LEVEL, aqui transformamos ele em BLOCK LEVEL e colocamos o MARGIN: AUTO. Neste caso ele se alinhou pois ele veio como padrão POSITION STATIC, iremos ver no exemplo abaixo como fazer com o POSITION ABSOLUTE.
+    </p>
     <div class="container">
         <button class="btn alinhado-margin-auto">Um botão</button>
     </div>
-    
+    <br>
+    <p>
+        Aqui temos a centralização do botão uitilizando o POSITION ABSOLUTE, conforme explicado acima não irá funcionar o MARGIN AUTO. Pra isso basta colocar POSITION ABSOLUTE, MARGIN AUTO e um HACKZINHO de TOP, RIGHT, BOTTOM, LEFT = 0.
+    </p>
+
     <div class="container">
         <button class="btn alinhado-absolute">Um botão</button>
     </div>
-
+    <br>
+    <p>Aqui iremmos alinhar uma imagem ao centro utilizando o TEXT-ALIGN CENTER. Ela tem que estar dentro de um DIV PAI. Se você colocar o TEXT-ALIGN na imagem abaixo não ira funcionar, LEMBRE-SE: você tem que colocar no filho.</p>
     <div class="container-text-align">
         <img src="./Image/fff.png" alt="placeholder">
     </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -25,21 +25,36 @@
         <section class="painel">
             <div class="info">
                 <h1>Um Filme do Batman</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad reiciendis dolores obcaecati laborum
-                    reprehenderit eius voluptates mollitia, tempora facilis architecto repudiandae itaque provident,
-                    magnam modi. Ipsum odio quaerat quos officiis?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum molestias ad vel tempore iure fugit
-                    ea asperiores eius nesciunt delectus tempora impedit soluta suscipit, sit recusandae beatae
-                    accusantium dolore repellendus?</p>
+                <p>
+                    Aqui iremos apender a introdução de RESPONSIVIDADE e MEDIA QUERY, iremos fazer esse site diminuir conforme as telas de celulares, para mod de didática criamos o site primeiro e depois o responsivo, mas lembre-se do MOBILE FIRST. Crie pensando primeiro no CELULAR e depois para PC.
+                </p>
             </div>
 
             <div class="image">
                 <picture>
-                <source srcset="./images/batman-pequena.jpg" media="(max-width: 600px)">
-                <img src="./images/batman.jpg" alt="Filme do Batman">
+                    <source srcset="./images/batman-pequena.jpg" media="(max-width: 600px)">
+                    <img src="./images/batman.jpg" alt="Filme do Batman">
                 </picture>
-                
+                <p>
+                    Aqui também colocamos a imagem responsiva usando a TAG PICTURE e configurando com a TAG SOURCE (onde escolhemos o caminho e o tamanho da imagem menor) e depois com uma IMG para a imagem grande.
+                </p>
             </div>
+
+                <article>
+                    <p>
+                        Temos a tabela do W3C com relação aos MEDIA QUERY, segue abaixo a mesma: 
+                        <ol>
+                            <li>@media (max-width: 375px) {  }// dispositivos extra pequenos</li>
+                            <li>@media (max-width: 576px) {  } // dispositivos pequenos (celulares em posição paisagem, menos de 768px)</li>
+                            <li>@media (max-width: 768px) {  } // dispositivos médios (tablets, menos de 992px)</li>
+                            <li>@media (max-width: 992px) {  } // dispositivos grandes (desktops, menos de 1200px)</li>
+                            <li>@media (max-width: 1200px) {  } // dispositivos extra grandes (desktops grandes) // 1200px ou mais, não tem breakpoint</li>
+                        </ol>
+                    </p>
+                    <p>
+                        Neste caso apenas configuraremos a de 576PX, porém o ideal é você criar uma CSS de MEDIA QUERY por tela e linkalas separadas, pois assim fica muito mais fácil e de configurar. 
+                    </p>
+                </article>
         </section>
     </main>
 </body>

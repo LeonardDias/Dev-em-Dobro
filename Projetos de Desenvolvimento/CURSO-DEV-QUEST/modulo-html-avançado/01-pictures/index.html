@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +7,12 @@
 </head>
 <body>
     <h1>Picture</h1>
-
+    <p>Aqui iremos aprrender a colocar as imagens responsivas ao tamanhos de telas dos usuários, para isso iremos utilizar a TAG PICTURE e dentro dela o SOURCE (para os tamanhos de telas desejadas) e o IMG (para a menor imagem escolhida).</p>
+    <p>Então basta colacar dentro de PICTURE os SOURCES e a IMG, sendo que respeitando a ordem de primeiro os SOURCES de maior para a menor e depois a IMG.</p>
     <picture>
         <source srcset="images/desktop.jpg" media="(min-width:768px)">
         <source srcset="images/tablet.jpg" media="(min-width:501px)">
         <img src="images/celular.jpg" alt="Montanhas com lago">
-        
     </picture>
 </body>
 </html>

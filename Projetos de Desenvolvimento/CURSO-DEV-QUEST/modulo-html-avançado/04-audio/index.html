@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +7,23 @@
 </head>
 <body>
     <h1>Audio</h1>
+    <P>
+        Aqui iremos aprender a colocar audios no seu site, então começaremos com a TAG AUDIO, colocaremos os ATRIBUTOS CONTROLS (ira aparecer o controle para a música), depois o PRELOAD (opcional, ele tem 3
+        valores diferentes: AUTO: carrega todo quando o site abre (cuidado pois se for um audio grande pode demorar a abrir), METADATA: carrega conforme o audio vai prosseguindo e NONE: só carrega quando você da o PLAY) e depois o AUTOPLAY (quase não utilizado).
+    </P>
+    <p>
+        Seguindo dentro da TAG AUDIO você irá utilizar a TAG SOURCE e irá colocar nela os caminhos dos audios nas pasta e o TYPE. É bom colocar diferentes tipos de FORMATO DO AUDIO, aqui escolhemos 3: OGG, MP3 e WAV e colocamos do arquivo mais leve para o mais pesado. Caso um pare de funcionar o outro ira funcionar.
+    </p>
+    <p>
+        E por último colocamos um texto para se o navegador não tiver suporte aos audios.
+    </p>
+    <p>ATENÇÃO A LICENSAS DOS AUDIOS!!!</p>
 
     <!-- <audio src="audios/audio.mp3" controls autoplay preload="none"></audio> NESTE CASO É A FORMA ANTIGA DE SE USAR E NEM TODO BROWSER UTILIZA OS AUDIOS EM FORMATO .OGG-->
 
     <!-- FORMA CORRETA DE SE UTLIZAR -->
 
-    <audio controls>
+    <audio controls preload="metadata">
         <source src="audios/audio.ogg" type="audio/ogg">
         <source src="audios/audio.mp3" type="audio/mp3">
         <source src="audios/audio.wav" type="audio/wav">

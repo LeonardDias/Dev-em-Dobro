@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +8,63 @@
     </head>
 <body>
     <h1>Pseudo Classes</h1>
+    <p>Nesta aula aprenderemos como utilizar pseudo-classes, a base é escolher o SELETOR e seguido de :  e a pseudo-classe, ficando assim, EX: p:hover {}. Neste exemplo colocamos a CLASSE HOVER mas existem outras!</p>
 
     <h2>First Child</h2>
 
     <div>
-        <p class="padrao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quisquam tenetur similique culpa eius, laboriosam ratione cumque eum quam fuga assumenda reprehenderit. Placeat quas aspernatur aliquid similique tempora est fugit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, eos cum. Libero nemo aliquid eligendi? Nostrum harum qui dolorem possimus obcaecati vel hic ab dignissimos sint fuga maxime, rerum quasi.</p>
+        <p class="padrao">
+            Aqui começaremos com o FIRST CHILD que seleciona o 1º elemento filho dentro de uma TAG PAI (que é este paragrafo pois ele está dentro de uma DIV PAI e o P neste exemplo são 3 filhos). E é colocado da seguiute forma: p:first-child {color: green;}, neste exemplo estamos colocando o 1º PARAGRAFO em COLOR: aquamarine. Vide abaixo
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fugit soluta laborum, porro, temporibus laboriosam nisi maxime aspernatur ad, voluptatum nulla sint fuga consequatur recusandae aperiam impedit voluptate enim reprehenderit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias exercitationem laboriosam rerum amet obcaecati distinctio iusto consectetur blanditiis eum pariatur fugit accusantium, autem dolor ipsum nobis quam cum, omnis itaque?
+        </p>
     </div>
 
     <h2>Last Child</h2>
 
     <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quisquam tenetur similique culpa eius, laboriosam ratione cumque eum quam fuga assumenda reprehenderit. Placeat quas aspernatur aliquid similique tempora est fugit.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, eos cum. Libero nemo aliquid eligendi? Nostrum harum qui dolorem possimus obcaecati vel hic ab dignissimos sint fuga maxime, rerum quasi.</p>
+        <p>
+            Aqui seguimos com o segundo o exemplo que é o LAST CHILD, que nada mais é que escolher o ultimo elemento FILHO dentro de uma DIV. Como pode ver no site que o ultimo PARAGRAFO do FIRST CHILD ficou BLUEVIOLET, pois aqui estamos apenas estilizando os P sem ID ou CLASSES eles irão mudar todos. Mas serve de exemplo.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, eos cum. Libero nemo aliquid eligendi? Nostrum harum qui dolorem possimus obcaecati vel hic ab dignissimos sint fuga maxime, rerum quasi.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias exercitationem laboriosam rerum amet obcaecati distinctio iusto consectetur blanditiis eum pariatur fugit accusantium, autem dolor ipsum nobis quam cum, omnis itaque?
+        </p>
+    </div>
+
+    <h2>Not</h2>
+
+    <div>
+        <p>
+            O NOT funciona da seguinte forma: p:not(.padrao) {color:yellow}. E isso nos diz o seguinte que todos os P que não tiverem a class='padrao' serão negadas e irão se transformar na configuração escolhida, neste caso todas as cores serão yellow. Então deixaremos ele COMENTADO na CSS para que não atrapalhe os estudos.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, eos cum. Libero nemo aliquid eligendi? Nostrum harum qui dolorem possimus obcaecati vel hic ab dignissimos sint fuga maxime, rerum quasi.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias exercitationem laboriosam rerum amet obcaecati distinctio iusto consectetur blanditiis eum pariatur fugit accusantium, autem dolor ipsum nobis quam cum, omnis itaque?
+        </p>
     </div>
 
     <h2>NTH Child</h2>
+    <p>
+        Aqui iremos escolher dentro da DIV PAI o filho a ser marcado, usaremos p:nth-child(1) {color: red;}, no () você poderá escolher várias opções por exemplo na lista abaixo se quiser escolher o item 3 basta coloca-lo dentro do (3), existem outras opções como o EVEN (ele escolherá todos filhos P pares da página), ODD (ele escolherá todos filhos P ímpares da página). Deixarei na CSS está opção COMENTADA para não atrapalhar os estudos.
+    </p>
+    <p>
+        Outra configuarção bastante utilizada é o (número + n) e fica assim (2n), isso significa que todos os filhos escolhidos de 2 em 2 receberão a configuração informada, se estiver (3n) de 3 em 3 e assim por diante.
+    </p>
+    <p>
+        Na lista abeixo está a configuração do nth-child(even) para visualização. Se você averiguar abaixo irá ver que o item 6 está BLUEVIOLET pois a configuração do NTH LAST CHILD que é o ultimo filho escolhido foi modificada. Ou seja ele vais ser do fim para o começo.
+    </p>
+    <p>
+        Você também pode estilizar escolhendo do item 2 ao 5 basta inserir na CSS o seguiten comando: li:nth-child(n+2):nth-child(-n+5) {color: red;} e pronto será selecionado em vermelho do item 2 ao 5. Iremos deixar-lo comentado.
+    </p>
     <ul>
         <li>Item 1</li>
         <li>Item 2</li>
@@ -44,9 +85,9 @@
     </ol>
 
     <h2>Only Child</h2>
-        <Div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque itaque temporibus soluta, ab repellendus nostrum! Velit esse laudantium repudiandae eveniet ipsum fuga magni perspiciatis, obcaecati dolore id veritatis fugiat facere.</p>
-        </Div>
+        <div>
+            <p>Neste caso iremos criar duas DIVS e o ONLY CHILD irá escolher todos os que tiverem apenas 1 filho, como podemos ver este irá ficar estilizado pois possue apenas um P, já a DIV de baixo que tem dois P irá seguir a configuração normal escolhida acima.</p>
+        </div>
         <div>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque incidunt fugiat nesciunt alias numquam illum sed officiis! Odit quas veritatis illum dolor libero tempore temporibus molestiae excepturi nisi, nesciunt fugit?</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque dolor odit voluptatibus ratione. Temporibus odio cumque nihil, optio debitis beatae esse corporis quibusdam, libero quae, consequatur voluptas velit cupiditate at.</p>

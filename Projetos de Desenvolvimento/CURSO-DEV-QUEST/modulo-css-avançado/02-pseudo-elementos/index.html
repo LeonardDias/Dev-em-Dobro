@@ -8,28 +8,57 @@
 </head>
 <body>
     <h1>Pseudo Elementos</h1>
-
+    <p>
+        Aqui iremos aprender sobre PSEUDO-ELEMENTOS e algumas de suas propriedades. Ele é utilizado da seguinte forma Ex: seletor::pseudo-elemento {propriedade: valor;}.
+    </p>
+    <p>
+        ATENÇÃO: pois nem todo PSEUDO-ELEMENTO funciona em TAG estilo INLINE LEVEL, apenas em BLOCK LEVEL. Fique atento e opte pela melhor opção.
+    </p>
+    <p>
+        Você também pode usar CLASS e ID para estilizar com os PSEUDO-ELEMENTOS.
+    </p>
+<hr>
     <h2>First Letter</h2>
-    <p class="first-letter">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate tempora vitae sit ipsam, sed suscipit dolor ipsum illum architecto velit ducimus nostrum eos. Deserunt veritatis, eligendi labore laborum voluptates similique.</p>
-
+    <p class="first-letter">
+        Como o próprio nome diz iremos estilizar apenas a 1ª Letra deste Parágrafo, neste caso aqui colocamos uma color coral e um font-size 100px. .first-letter::first-letter {color: coral; font-size: 100px;}
+    </p>
+<hr>
     <h2>First Line</h2>
-    <p class="first-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eveniet laudantium et in sed. Quae officiis id voluptatem eum dignissimos, quo et, libero labore fugit in pariatur quasi ab eveniet!</p>
-
+    <p class="first-line">
+        Neste segundo exemplo iremos personalizar a 1ª letra e a 1ª linha com o FIRST LINE e combinar ambos. Colocamos as seguintes configurações:
+        .first-line::first-line {color: coral; font-size: 2em;}
+        .first-line::first-letter {color: blue; font-size: 4em;}
+    </p>
+<hr>
     <h2>Marker</h2>
+    <p>
+        Podemos também usar o MARKER para estilizar os marcadores de uma lista. EX: li::marker {color: red; font-size: 23px;}
+    </p>
     <ul>
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
         <li>Item 4</li>
     </ul>
-
+<hr>
+    <p>Agora iremos aprender os pseudo-elementos (provavelmente) mais utilizados que são o BEFORE e o AFTER, que são respectivamente o antes e o depois e serve para estilizar algo, como veremos a seguir.</p>
+    <p>
+        Aqui colocaremos um coração (mas você pode colocar o que quiser e estilizar da mesma forma) ANTES do TÍTULO. De uma olhada na CSS que existem algumas formas de configurações SHORTHAND ou mais detalhadas.
+    </p>
     <h2 class="before">
         Meu Título BEFORE
     </h2>
-    
+    <p>
+        Aqui colocaremos um coração (mas você pode colocar o que quiser e estilizar da mesma forma) DEPOIS do TÍTULO. De uma olhada na CSS que existem algumas formas de configurações SHORTHAND ou mais detalhadas.
+    </p>
     <h2 class="after">
         Meu Título AFTER
     </h2>
-
+    <p>
+        As configurações na CSS vai depender das suas escolhas, então preste atenção.
+    </p>
+    <p>
+        Exemplo que você pode utilizar neste caso de BEFORE e AFTER é em vez de usar uma imagem (img) / texto (p) / etc... no HTML (pois isso pode poluir o HTML) é melhor usar o PSEUDO-ELEMENTO e estilizar com CONTENT na CSS.
+    </p>
 </body>
 </html>

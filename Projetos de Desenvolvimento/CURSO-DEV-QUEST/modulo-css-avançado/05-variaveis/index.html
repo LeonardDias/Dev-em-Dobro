@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +9,32 @@
 </head>
 <body>
     <h1>Variaveis</h1>
-
+    <p>
+        Aqui iremos falar de algo muito importante que são as VARIÁVEIS, com elas armazenamos valores para utilização na CSS, facilitando muito e nos ajudando de formas mais simples. Um exemplo é, imagine trocar uma cor em 100 PROPRIEDADES na CSS (TRABALHOSO), agora imagina que você armazenou essa cor em uma VARIÁVEL, basta apenas trocar nela que as outras 100 cores irão mudar automaticamente.
+    </p>
+    <p>
+        ATENÇÃO: até a data de hoje 17/11/2023 existem alguns navegadores que não aceitam VARIÁVEIS, que são os INTERNET EXPLORER e o OPERA MINI. Sempre averigue no site do CAN I USE e digite VARIABLES para mais detalhes.
+    </p>
+    <p>
+        Existem dois tipos de VARIÁVEIS as de escopo GLOBAIS (que podem ser utilizadas em todo o documento neste caso é criado a RAIZ na CSS que é a ROOT:) e as de escopo LOCAIS (que só podem ser usadas nos seletores em que elas foram criadas.). EX: :root {--cor-padrao: green;            --tamanho-de-fonte-padrao: 30px;}. 
+    </p>
+<hr>
+    <p>
+        Aqui iremos estilizar a CSS com as seguintes propriedades: h2 {--cor-padrao: blue; color: var(--cor-padrao, red); font-size: var(--tamanho-de-fonte-padrao, 20px); background-color: red;}. Isso significa que a cor padrão da fonte será azul, se der algum erro ela ira receber a cor padrão da root verde e se der errado vermelho, a cor de fundo será vermelha e o tamanho da fonte será 20px.
+    </p>
+    <p>
+        Aqui neste caso o --cor-padrao: blue; foi criado como uma VARIÁVEL LOCAL, ou seja apenas dentro da seletor H2.;
+    </p>
     <h2>Titulo 2</h2>
+<hr>
+    <p>
+        Aqui segue o modelo do ESCOPO GLOBAL do ROOT.
+    </p>
     <h3>Titulo 3</h3>
+<hr>
+    <p>
+        Aqui segue o modelo do ESCOPO GLOBAL do ROOT.
+    </p>
     <p>Texto do paragrafo</p>
     <span>Texto do Span</span>
 </body>

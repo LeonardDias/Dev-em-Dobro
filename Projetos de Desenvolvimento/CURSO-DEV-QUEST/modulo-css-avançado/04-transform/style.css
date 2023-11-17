@@ -4,10 +4,15 @@ img {
 
 img.scale{
     transform: scale(2,1);
+    margin-left: 200px;
+    /*Existem também essas duas formas abaixo, mas a de cima é a versão SHORTHAND.*/
+    /* transform: scaleX();
+    transform: scaleY(); */
 }
 
 img.rotate {
-    transform: rotate(90deg);
+    transform: rotate(90deg); /*DEG é GRAUS em inglês*/
+    margin: 20px;
 }
 
 img.translate {

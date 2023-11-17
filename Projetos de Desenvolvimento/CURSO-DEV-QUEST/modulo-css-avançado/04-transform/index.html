@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +8,27 @@
 </head>
 <body>
     <h1>Transform</h1>
-
+    <p>
+        Aqui iremos falar sobre TRANSFORM em elemntos na CSS. Esses elmentos pode ser uma IMAGEM, DIV, ETC... E podem ter várias formas, veremos algumas aqui. Colocamos na CSS a estilização da imagem tendo uma LARGURA de 200px.
+    </p>
+<hr>
     <h2> Transform Scale</h2>
-    <img src="./images/imagem 3.jpeg" alt="scale" title="Café" class="scale">
-
+    <p>
+        Aqui colocaremos o SCALE, que irá escalonar a imagem no EIXO X (largura) e Y (altura) na mesma PROPRIEDADE e escolhendo o VALOR. EX: img.scale{transform: scale(2,1);}. Neste caso colocamos aumentamos as escala em duas vezes no eixo X e uma vez no eixo Y. ATENÇÃO: a imagem por ser diplay block level ela irá cobrir outros itens se você escalonar ela muito, então fique atento ao tamanho.
+    </p>
+    <img class="scale" src="./images/imagem 3.jpeg" alt="scale" title="Café">
+<hr>
     <h2> Transform Rotate</h2>
-    <img src="./images/imagem 3.jpeg" alt="scale" title="Café" class="rotate">
-
+    <p>
+        Com o ROTATE podemos rotacionar o elemento em GRAUS. EX: img.rotate {
+            transform: rotate(90deg); margin: 20px;}
+    </p>
+    <img class="rotate" src="./images/imagem 3.jpeg" alt="scale" title="Café">
+    <hr>
     <h2> Transform Translate</h2>
-    <img src="./images/imagem 3.jpeg" alt="scale" title="Café" class="translate">
+    <p>
+        Com o TRANSLATE ele vai fazer uma translaçao do elemento podendo ser movido pela tela 2D no eixo X e Y. Para mais detalhes de uma olhada no  Capítulo 19 Aula 07 – Centralização vertical de caixas do CURSO EM VÍDEO, que detalha todo melhor aqui.
+    </p>
+    <img class="translate" src="./images/imagem 3.jpeg" alt="scale" title="Café">
 </body>
 </html>

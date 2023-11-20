@@ -16,7 +16,7 @@
     <section>
         <h2>Direction</h2>
         <p>
-            Nossa primeira PROPRIEDADE é o DIRECTION, para começar temos um CONTAINER PAI que neste caso aqui é a TAG DIV com CLASS = CONTAINER1 e DIRECTION e dentro dela temos os FILHOS que são outras DIVS com CLASS = ITEM.
+            Nossa primeira PROPRIEDADE é o DIRECTION, para começar temos um CONTAINER PAI que neste caso aqui é a TAG FIELDSET com CLASS = CONTAINER1 e DIRECTION e dentro dela temos os FILHOS que são outras DIVS com CLASS = ITEM.
         </p>
         <p>
             A propriedade flex-direction determina a direção em que os itens flexíveis são posicionados dentro do contêiner flex. E existem 4 diferentes VALORES para essa PROPRIEDADE:
@@ -34,11 +34,12 @@
             COLUMN-REVERSE - Com esse valor teremos o alinhamento dos itens em colunas também, porém eles serão reversos de BAIXO para CIMA, do FIM TRANSVERSAL para o INICIO TRANSVERSAL da imagem. OBS: No exemplo criado da aula os quadrados possuem números e com este exemplo fica do 3 para o 1.
         </p>
 
-        <div class="container1 direction">
+        <fieldset class="container1 direction">
+            <legend>Container</legend>
             <div class="item">1</div>
             <div class="item">2</div>
             <div class="item">3</div>
-        </div>
+        </fieldset>
     </section>
     
     <section>
@@ -56,14 +57,15 @@
             NOWRAP - Com esse valor quando a tela for ficando menor ele manterá os FLEX ITENS na mesma linha e irá reduzir o tamanho dos itens para continuar o alinhamento.
         </p>
 
-        <div class="container2 wrap">
+        <fieldset class="container2 wrap">
+            <legend>Container</legend>
             <div class="item">1</div>
             <div class="item">2</div>
             <div class="item">3</div>
             <div class="item">4</div>
             <div class="item">5</div>
             <div class="item">6</div>
-        </div>
+        </fieldset>
     </section>
 
     <section>
@@ -74,11 +76,12 @@
         <p>
             Neste caso é a junção de ambas as PROPRIEDADES DIRECTION e WRAP, em uma só.
         </p>
-        <div class="container3 flow">
+        <fieldset class="container3 flow">
+            <legend>Container</legend>
             <div class="item">1</div>
             <div class="item">2</div>
             <div class="item">3</div>
-        </div>
+        </fieldset>
     </section>
 </body>
 </html>

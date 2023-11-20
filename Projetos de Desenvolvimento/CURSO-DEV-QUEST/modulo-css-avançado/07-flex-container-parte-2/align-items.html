@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -11,60 +11,82 @@
 
 <body>
     <h1>Flex Container - Align items</h1>
-    <p>A propriedade align-items é usada para controlar a posição vertical dos elementos dentro de um contêiner flexível (um flex container). Ela define como os itens flexíveis são alinhados ao longo do eixo transversal (eixo Y) em relação ao contêiner flexível.</p>
+    <p>
+        A propriedade align-items é usada para controlar a posição vertical dos elementos dentro de um contêiner flexível (um flex container). Ela define como os itens flexíveis são alinhados ao longo do eixo transversal (eixo Y) em relação ao contêiner flexível.
+    </p>
+        <img src="./img/imagem flexbox.png" alt="Imagem Flex-box">
+    <p>
+        Aqui iremos continuar a controlar os FLEX-ITEMS, utilizando o ALIGN ITEMS e com isso movimentar o CONTEÚDO VERTICALMENTE. Com isso entendemos que para movimentar os FLEX-ITENS usaremos o JUSTIFY-CONTENT para alinhar eles HORIZONTALMENTE e o ALIGN ITENS alinha VERTICALMENTE.
+    </p>
+    
 
     <Section>
         <h2>Flex-start</h2>
-        <p>Este é o valor padrão. Ele alinha os itens no início do eixo transversal do contêiner, empurrando-os para o topo do contêiner, se houver espaço extra.</p>
-        <div class="container flex-start">
+        <p>
+            Este é o valor padrão. Ele alinha o conteúdo dos flex-itens no início do eixo transversal do contêiner, empurrando-os para o topo do contêiner, se houver espaço extra.
+        </p>
+        <fieldset class="container flex-start">
+            <legend>Container</legend>
             <div class="item item1">Lorem ipsum dolor, amet consectetur.</div>
             <div class="item item2">Lorem ipsum dolor amet consectetur?</div>
             <div class="item item3">Lorem ipsum, sit amet consectetur</div>
-        </div>
+        </fieldset>
     </Section>
 
     <Section>
         <h2>Flex-end</h2>
-        <p>Isso alinha os itens no final do eixo transversal do contêiner, empurrando-os para a parte inferior do contêiner, se houver espaço extra.</p>
+        <p>
+            Isso alinha os itens no final do eixo transversal do contêiner, empurrando-os para a parte inferior do contêiner, se houver espaço extra.
+        </p>
 
-        <div class="container flex-end">
+        <fieldset class="container flex-end">
+            <Legend>Container</Legend>
             <div class="item item1">Lorem ipsum dolor, amet consectetur.</div>
             <div class="item item2">Lorem ipsum dolor amet consectetur?</div>
             <div class="item item3">Lorem ipsum, sit amet consectetur</div>
-        </div>
+        </fieldset>
     </Section>
 
     <Section>
         <h2>Center</h2>
-        <p>Isso centraliza os itens verticalmente dentro do contêiner ao longo do eixo transversal.</p>
+        <p>
+            Isso centraliza os itens verticalmente dentro do contêiner ao longo do eixo transversal.
+        </p>
 
-        <div class="container center">
+        <fieldset class="container center">
+            <legend>Container</legend>
             <div class="item item1">Lorem ipsum dolor, amet consectetur.</div>
             <div class="item item2">Lorem ipsum dolor amet consectetur?</div>
             <div class="item item3">Lorem ipsum, sit amet consectetur</div>
-        </div>
+        </fieldset>
     </Section>
 
     <Section>
         <h2>Stretch</h2>
-        <p>Isso estica automaticamente os itens para preencher todo o espaço disponível ao longo do eixo transversal. É o valor padrão quando não especificado.</p>
+        <p>
+            Isso estica automaticamente os itens para preencher todo o espaço disponível ao longo do eixo transversal. É o valor padrão quando não especificado.
+        </p>
 
-        <div class="container stretch">
+        <fieldset class="container stretch">
+            <legend>Container</legend>
             <div class="item item1">Lorem ipsum dolor, amet consectetur.</div>
             <div class="item item2">Lorem ipsum dolor amet consectetur?</div>
             <div class="item item3">Lorem ipsum, sit amet consectetur</div>
-        </div>
+        </fieldset>
     </Section>
 
     <Section>
         <h2>Baseline</h2>
-        <p>Isso alinha os itens de acordo com suas linhas de base (a linha onde o texto descansa). Pode ser útil quando os itens têm alturas diferentes, mas você deseja que suas linhas de texto estejam alinhadas.</p>
+        <p>
+            Isso alinha os itens de acordo com suas linhas de base (a linha onde o texto descansa). Pode ser útil quando os itens têm alturas diferentes, mas você deseja que suas linhas de texto estejam alinhadas.
+        </p>
 
-        <div class="container baseline">
-            <div class="item item1">Lorem ipsum dolor, amet consectetur.</div>
-            <div class="item item2">Lorem ipsum dolor amet consectetur?</div>
+        <fieldset class="container baseline">
+            <legend>Container</legend>
+            <div class="item item1">Lorem ipsum dolor, amet consectetur. Lorem ipsum dolor, amet consectetur.Lorem ipsum dolor, amet consectetur.</div>
+            <div class="item item2">Lorem ipsum dolor amet consectetur? </div>
             <div class="item item3">Lorem ipsum, sit amet consectetur, house mother </div>
-        </div>
+        </fieldset>
     </Section>
 
 </body>

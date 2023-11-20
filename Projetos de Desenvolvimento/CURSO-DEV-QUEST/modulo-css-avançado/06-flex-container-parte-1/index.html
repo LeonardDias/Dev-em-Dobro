@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,31 @@
 </head>
 <body>
     <h1>Flex Container: Direction - Wrap - Flow</h1>
-
+    <p>Aqui iremos começar a aprender o ná prático o FLEXBOX e suas PROPRIEDADES.</p>
+    <img src="./img/imagem flexbox.png" alt="Imagem Flexbox">
+    <p>
+        Analisaremos todo o conteúdo desta aula comparando com a imagem acima, para ficar mais fácil a compreensão.
+    </p>
     <section>
         <h2>Direction</h2>
-        <p>A propriedade flex-direction determina a direção em que os itens flexíveis são posicionados dentro do contêiner flex.</p>
+        <p>
+            Nossa primeira PROPRIEDADE é o DIRECTION, para começar temos um CONTAINER PAI que neste caso aqui é a TAG DIV com CLASS = CONTAINER1 e DIRECTION e dentro dela temos os FILHOS que são outras DIVS com CLASS = ITEM.
+        </p>
+        <p>
+            A propriedade flex-direction determina a direção em que os itens flexíveis são posicionados dentro do contêiner flex. E existem 4 diferentes VALORES para essa PROPRIEDADE:
+        </p>
+        <p>
+            ROW - Com esse valor temos o alinhamento dos itens na linha (PADRÃO) da ESQUERDA para a DIREITA. Começando do INICIO PRINCIPAL para o FIM PRINCIPAL do CONTAINER.
+        </p>
+        <p>
+            ROW-REVERSE - Com esse valor temos o alinhamento dos itens na linha também, porém eles serão alinhados da DIREITA para a ESQUERDA. Começando do FIM PRINCIPAL para o INICIO PRINCIPAL do CONTAINER.OBS: No exemplo criado da aula os quadrados possuem números e com este exemplo fica do 3 para o 1.
+        </p>
+        <p>
+            COLUMN - Com esse valor teremos o alinhamento dos itens em colunas (PADRÃO), de CIMA para BAIXO, do INICIO TRANSVERSAL para o FIM TRANSVERSAL da imagem.
+        </p>
+        <p>
+            COLUMN-REVERSE - Com esse valor teremos o alinhamento dos itens em colunas também, porém eles serão reversos de BAIXO para CIMA, do FIM TRANSVERSAL para o INICIO TRANSVERSAL da imagem. OBS: No exemplo criado da aula os quadrados possuem números e com este exemplo fica do 3 para o 1.
+        </p>
 
         <div class="container1 direction">
             <div class="item">1</div>
@@ -22,7 +43,18 @@
     
     <section>
         <h2>Wrap</h2>
-        <p>A propriedade flex-wrap determina se os itens flexíveis devem ser dispostos em uma única linha (valor padrão) ou em várias linhas, se o espaço for insuficiente. </p>
+        <p>
+            A propriedade FLEX-WRAP determina se os itens flexíveis devem ser dispostos em uma única linha (valor padrão) ou em várias linhas, se o espaço for insuficiente. Ele é usado com FLEX-DIRECTION = ROW. Ele contém 3 principais PROPRIEDADES, que são:
+        </p>
+        <p>
+            WRAP - Com esse valor quando a tela for ficando menor ele irá começar a descer os FLEX ITENS da linha e irá manter o tamanho dos itens e descendo, deixando assim os itens alinhados até que vire uma coluna com um item embaixo do outro. 
+        </p>
+        <p>
+            WRAP-REVERSE - Com esse valor quando a tela for ficando menor ele irá começar a descer os FLEX ITENS da linha, porém os FLEX ITENS serão revertidos (em vez de começar do 1 ao 6 ele manterá em cima do 6 ao 1) e irá manter o tamanho dos itens e descendo, deixando assim os itens alinhados até que vire uma coluna com um item embaixo do outro. 
+        </p>
+        <p>
+            NOWRAP - Com esse valor quando a tela for ficando menor ele manterá os FLEX ITENS na mesma linha e irá reduzir o tamanho dos itens para continuar o alinhamento.
+        </p>
 
         <div class="container2 wrap">
             <div class="item">1</div>
@@ -36,8 +68,12 @@
 
     <section>
         <h2>Flow</h2>
-        <p>A propriedade flex-flow é uma abreviação para definir simultaneamente as propriedades flex-direction e flex-wrap. Ela aceita um valor combinado dessas duas propriedades. O formato é {flex-direction} {flex-wrap}.</p>
-
+        <p>
+            A propriedade flex-flow é uma abreviação para definir simultaneamente as propriedades flex-direction e flex-wrap. Ela aceita um valor combinado dessas duas propriedades. O formato é {flex-direction} {flex-wrap}.
+        </p>
+        <p>
+            Neste caso é a junção de ambas as PROPRIEDADES DIRECTION e WRAP, em uma só.
+        </p>
         <div class="container3 flow">
             <div class="item">1</div>
             <div class="item">2</div>

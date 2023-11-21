@@ -1,0 +1,24 @@
+p {
+    text-align: justify;
+}
+
+.container {
+    display: flex;
+    /* flex-direction: row-reverse; */ /*aqui neste caso inverte as posições colocadas no JUSTIFY-CONTENT.CSS*/
+    max-width: 70%;
+    border: 1px solid #ccc;
+}
+
+.item {
+    background-color: rgb(195, 145, 241);
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    /* flex: 1; VAMOS VER DEPOIS O QUE SE ENCONTRA AQUIEM OUTRAS AULAS */
+    border: 2px solid black;
+}
+
+.justify-content .item1, .justify-content .item3 {
+    width: 80px;
+}

@@ -1,48 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Items - Grow - Basis - Shrink</title>
 
-    <link rel="stylesheet" href="../07-flex-container-parte-2/css/globals.css">
+    <link rel="stylesheet" href="./css/globals.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1>Flex Items - Grow - Basis - Shrink</h1>
-    <p>São os elementos HTML filhos dentro do contêiner flex. Estes são os itens que serão organizados e distribuídos de acordo com as regras do flexbox. Cada item individual é referido como um "flex item".</p>
+    <p>
+        São os elementos HTML filhos dentro do contêiner flex. Estes são os itens que serão organizados e distribuídos de acordo com as regras do flexbox. Cada item individual é referido como um "flex item".
+    </p>
+    <p>
+        Aqui iremos explorar o que será setado nas PROPRIEDADES dos FLEX ITEMS como podemos ver a imagem abaixo.
+    </p>
 
-    <section>
+    <img src="./img/imagem flexbox.png" alt="">
+
+    <!-- <section>
         <h2>Grow</h2>
-        <p>A propriedade "flex-grow" define a proporção na qual um item flexível cresce em relação aos outros itens flexíveis no mesmo contêiner. Ela aceita um valor numérico, que representa a proporção de crescimento. Quanto maior o valor, mais o item crescerá em relação aos outros. Por padrão, todos os itens têm um valor de "flex-grow" igual a zero, o que significa que eles não crescerão e ocuparão apenas o espaço disponível para seu conteúdo.</p>
-        <Div class="container">
+        <p>
+            A propriedade "flex-grow" define a proporção na qual um item flexível cresce em relação aos outros itens flexíveis no mesmo contêiner. Ela aceita um valor numérico, que representa a proporção de crescimento. Quanto maior o valor, mais o item crescerá em relação aos outros. Por padrão, todos os itens têm um valor de "flex-grow" igual a zero, o que significa que eles não crescerão e ocuparão apenas o espaço disponível para seu conteúdo.
+        </p>
+        <p>
+            Atenção o JUSTIFY CONTENT não irá funcionar com o FLEX GROW, pois o mesmo já pega todo o tamanho da linha do CONTAINER.
+        </p>
+        <fieldset class="container">
+            <legend>Container</legend>
             <div class="item grow-0">0</div>
             <div class="item grow-1">1</div>
             <div class="item grow-2">2</div>
             <div class="item grow-3">3</div>
-        </Div>
-    </section>
+        </fieldset>
+    </section> 
 
     <section>
         <h2>Basis</h2>
-        <p>A propriedade flex-basis é usada em Flexbox para definir o tamanho inicial de um item flexível dentro de um contêiner flexível. Ela especifica o tamanho base que um item flexível deve ter antes de qualquer distribuição de espaço extra ou encolhimento de espaço ocorrer, com base nas propriedades flex-grow e flex-shrink.</p>
-        <div class="container">
-            <!-- <div class="item grow-1 basis-auto">lorem</div>
-            <div class="item grow-1 basis-0">0</div> -->
+        <p>
+            A propriedade flex-basis é usada em Flexbox para definir o tamanho inicial de um item flexível dentro de um contêiner flexível. Ela especifica o tamanho base que um item flexível deve ter antes de qualquer distribuição de espaço extra ou encolhimento de espaço ocorrer, com base nas propriedades flex-grow e flex-shrink.
+        </p>
+        <p>
+            Ou seja independente do TAMANHO do CONTEÚDO DENTRO DO FLEX-ITEMS se você setar o mesmo tamanho para todos ele não mudará. 
+        </p>
+        <p>
+            O FLEX-BASIS: AUTO é o padrão inicial. Podemos selecionar vários tipos de medidas para ele, em PX, EM, %, etc...
+        </p>
+        <p>
+            Se você colocar todos os VALORES IGUAIS eles ficarão como os mesmos tamanhos.
+        </p>
+        <fieldset class="container">
+            <legend>Container</legend>
+            <div class="item grow-1 basis-auto">lorem</div>
+            <div class="item grow-1 basis-0">0</div>
             <div class="item grow-1 basis-100">lorem 123</div>
             <div class="item grow-1 basis-200">lorem 123 456</div>
             <div class="item grow-1 basis-300">lorem 123 456 789</div>
-        </div>
-    </section>
+        </fieldset>
+    </section> -->
 
     <section>
         <h2>Shrink</h2>
-        <p>A propriedade flex-shrink é usada em flexbox para determinar como os itens flexíveis dentro de um contêiner flexível devem diminuir de tamanho quando há espaço insuficiente no contêiner para acomodar todos os itens com seus tamanhos iniciais.</p>
-        <div class="container shrink">
+        <p>
+            A propriedade flex-shrink é usada em flexbox para determinar como os itens flexíveis dentro de um contêiner flexível devem diminuir de tamanho quando há espaço insuficiente no contêiner para acomodar todos os itens com seus tamanhos iniciais.
+        </p>
+        <p>
+            O PADRÃO do FLEX-SHRINK é 1, não importando o TAMANHO do CONTAINER os FLEX-ITEMS irão se adaptar ao tamanho do CONTAINER.
+        </p>
+        <fieldset class="container shrink">
+            <legend>Container</legend>
             <div class="item shrink-0">Lorem, ipsum dolor sit amet.</div>
+            <div class="item shrink-1">Lorem, ipsum dolor sit amet.</div>
             <div class="item shrink-2">Lorem, ipsum dolor sit amet.</div>
             <div class="item shrink-3">Lorem, ipsum dolor sit amet.</div>
-        </div>
+        </fieldset>
     </section>
     
 

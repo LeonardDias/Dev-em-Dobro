@@ -1,3 +1,7 @@
+.texto {
+    text-align: justify;
+}
+
 .flex{
     display: flex;
     width: 960px;
@@ -12,10 +16,13 @@
 .coluna {
     display: flex;
     flex-direction: column;
-    /* background-color: aquamarine; */
     flex: 0 1 250px;
     margin: 1em;
-    /* width: 250px; */
+    text-align: justify;
+    border: 1px solid black;
+    padding: 5px;
+    /* background-color: aquamarine;
+    width: 250px; */
 }
 
 .botao{

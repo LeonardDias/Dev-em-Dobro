@@ -1,0 +1,33 @@
+.horizontal {
+    display: flex;
+    justify-content: center;
+    padding: 130px 22px;
+    /* flex-wrap: wrap; */
+}
+
+.imagens {
+    position: relative;
+    padding: 20px;
+}
+
+.texto {
+    position: absolute;
+    top: 70%;
+    left: 30px;
+    color: white;
+}
+
+h2 {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+p {
+    padding-top: 5px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+}

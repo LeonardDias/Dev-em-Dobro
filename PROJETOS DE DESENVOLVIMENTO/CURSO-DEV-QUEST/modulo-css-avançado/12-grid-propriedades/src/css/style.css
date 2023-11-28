@@ -1,0 +1,50 @@
+.container1 > div {
+    background-color: blueviolet;
+    color: red;
+    border: 1px solid black;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: repeat(2, 150px);
+}
+
+.container2 > div {
+    background-color: blueviolet;
+    color: red;
+    border: 1px solid black;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    grid-template-rows: repeat(2, 150px);
+}
+
+.container3 > div {
+    background-color: blueviolet;
+    color: red;
+    border: 1px solid black;
+}
+
+.container3 {
+    display: grid;
+    grid-template: repeat(2, 100px) / repeat(3, 100px);
+}
+
+.container4 > div {
+    background-color: blueviolet;
+    color: red;
+    border: 1px solid black;
+}
+
+.container4 {
+    display: grid;
+    grid-template: repeat(2, 100px) / repeat(3, 100px);
+    /* grid-gap: 10px 5px; */
+    /* grid-column-gap: 10px; */
+    /* grid-row-gap: 10px; */
+    gap: 10px 5px;
+    
+}

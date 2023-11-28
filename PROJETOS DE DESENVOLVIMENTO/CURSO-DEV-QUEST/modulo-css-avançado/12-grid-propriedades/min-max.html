@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades MIN-MAX</title>
+    <link rel="stylesheet" href="src/css/min-max.css">
+</head>
+<body>
+    <h1>PROPRIEDADE MINMAX</h1>
+    <h2>Display GRID</h2>
+    <p>
+        O MINMAX irá se adequar aos tamanhos que você determinar dentro do CONTAINER PAI, mediante ao tamanho da TELA. 
+    </p>
+    <p>
+        Ex: grid-template-columns: minmax(100px,800px) repeat(2,minmax(100px,300px)) minmax(auto,auto); a 1ª coluna irá se adequar a cada tamanho informado dentro do CONTAINER PAI (dependendo do tamanho da tela) entre 100px e 800px. Já a 2ª e a 3ª ira pegar entre 100px e 300px. E por fim a 4ª irá pegar o valor restante automaticamente. Como aqui estamos utilizando o GRID-TEMPLATE-COLUMNS estamos falando das colunas ou seja altura.
+    </p>
+    <p>
+        Diminua e aumente a tela para ver melhor.
+    </p>
+    <fieldset class="container">
+        <legend>CONTAINER</legend>
+        <div>
+            Ajusta o conteúdo no minimo de 100px
+            <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos non voluptatum, molestiae consequatur aliquid incidunt inventore vel! Impedit blanditiis.
+        </div>
+        <div>
+            Ajusta o conteúdo no máximo 200px
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit modi exercitationem.
+        </div>
+        <div>
+            Ajusta o conteúdo no minimo 200px
+            <br>
+        </div>
+        <div>maximo 1fr</div>
+        <div>Célula 5</div>
+        <div>Célula 5</div>
+        <div>Célula 7</div>
+        <div>Célula 8</div>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades do GRID</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <h1>Propriedades de GRID</h1>
+    <p>
+        Aqui iremos continuar aprendendo sobr GRID e algumas de suas PROPRIEDADES.
+    </p>
+    <hr>
+    <h2>REPEAT ROWS</h2>
+    <p>
+        Na propriedade GRID-TEMPLATE-ROW existem alguns valores que são importantes, veremos aqui o REPEAT, assim não teremos que colocar manualmente quantas linhas existem. Basta colocar repeat(2 (quantidades de linhas que serão configuradas), 150px (tamanho que a linha irá receber de altura)). EX: GRID-TEMPLATE-ROW: repeat(2, 150px).
+    </p>
+    <p>Ou seja neste caso irá configurar as duas primeiras linhas com 150px de altura.</p>
+    <fieldset class="container1">
+        <legend>CONTAINER</legend>
+            <div>Célula 1</div>
+            <div>Célula 2</div>
+            <div>Célula 3</div>
+            <div>Célula 4</div>
+            <div>Célula 5</div>
+            <div>Célula 6</div>
+            <div>Célula 7</div>
+            <div>Célula 8</div>
+            <div>Célula 9</div>
+            <div>Célula 10</div>
+            <div>Célula 11</div>
+            <div>Célula 12</div>
+            <div>Célula 13</div>
+            <div>Célula 14</div>
+            <div>Célula 15</div>
+    </fieldset>
+    <h2>REPEAT COLUMNS</h2>
+    <p>
+        Na propriedade GRID-TEMPLATE-COLUMNS existem alguns valores que são importantes, aqui também o REPEAT funciona da mesma forma, assim não teremos que colocar manualmente quantas colunas existem. Basta colocar repeat(2 (quantidades de colunas que serão configuradas), 150px (tamanho que a coluna irá receber de largura)). EX: GRID-TEMPLATE-COLUMNS: repeat(2, 150px).
+    </p>
+    <p>Ou seja neste caso irá configurar as duas primeiras colunas com 150px de altura.</p>
+    <fieldset class="container2">
+        <legend>CONTAINER</legend>
+            <div>Célula 1</div>
+            <div>Célula 2</div>
+            <div>Célula 3</div>
+            <div>Célula 4</div>
+            <div>Célula 5</div>
+            <div>Célula 6</div>
+            <div>Célula 7</div>
+            <div>Célula 8</div>
+            <div>Célula 9</div>
+            <div>Célula 10</div>
+            <div>Célula 11</div>
+            <div>Célula 12</div>
+            <div>Célula 13</div>
+            <div>Célula 14</div>
+            <div>Célula 15</div>
+    </fieldset>
+    <h2>REPEAT (SHORTHAND)</h2>
+    <p>
+        Veremos como podemos utilizar a versão SHORTHAND. Basta colocar como propriedade o GRID-TEMPLATE com os valores desta forma: LINHA / COLUNA. PRESTE ATENÇÃO a / (BARRA)é obrigatória. Podemos utilizar inclusive com o REPEAT
+    </p>
+    <p>
+       EX sem repeat: 150px / auto auto; isso nos mostra que a linha recebeu 150px de altura e as duas colunas preencheram o tamanho automático da largura. 
+    </p>
+    <p>
+        EX com repeat: repeat(1, 150px) / repeat(2, auto); isso nos mostra que a linha recebeu 150px de altura e as duas colunas preencheram o tamanho automático da largura.
+    </p>
+        <fieldset class="container3">
+            <legend>CONTAINER</legend>
+            <div>Célula 1</div>
+            <div>Célula 2</div>
+            <div>Célula 3</div>
+            <div>Célula 4</div>
+            <div>Célula 5</div>
+            <div>Célula 6</div>
+            <div>Célula 7</div>
+            <div>Célula 8</div>
+            <div>Célula 9</div>
+            <div>Célula 10</div>
+            <div>Célula 11</div>
+            <div>Célula 12</div>
+            <div>Célula 13</div>
+            <div>Célula 14</div>
+            <div>Célula 15</div>
+    </fieldset>
+    <h2>GRID GAP (Já obsoleto na W3C) AGORA é apenas GAP</h2>
+    <p>
+        Na propriedade GRID-GAP ela nos dará um espaçamento entre as células utilizadas. EX:grid-gap: 10px;
+    </p>
+    <p>
+        Ou seja nos dando 10px de espaçamento entre as células.
+    </p>
+    <p>
+        Temos também o GRID-COLUMN-GAP: que irá nos dar um espaçamento entre as colunas.
+    </p>
+    <p>
+        E também o GRID-ROW-GAP: que irá nos dar um espaçamento entre linhas.
+    </p>
+    <P>
+        Podemos também utilizar a versão SHORTHAND delas basta colocar no GRID-GAP o 1º Valor da linha e o 2º Valor da coluna.
+    </P>
+    <fieldset class="container4">
+        <legend>CONTAINER</legend>
+            <div>Célula 1</div>
+            <div>Célula 2</div>
+            <div>Célula 3</div>
+            <div>Célula 4</div>
+            <div>Célula 5</div>
+            <div>Célula 6</div>
+            <div>Célula 7</div>
+            <div>Célula 8</div>
+            <div>Célula 9</div>
+            <div>Célula 10</div>
+    </fieldset>
+</body>
+</html>

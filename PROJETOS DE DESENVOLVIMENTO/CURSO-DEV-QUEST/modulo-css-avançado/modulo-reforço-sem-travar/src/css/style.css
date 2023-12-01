@@ -1,0 +1,94 @@
+body {
+    background-color: var(--neutral-dark);
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft-card {
+    background-color: var(--neutral-medium);
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.image-link {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.image {
+    width: 270px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.title {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.about {
+    color: var(--primary-soft);
+    padding-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 7px;
+    padding-bottom: 20px;
+
+}
+
+.price::before {
+    content: '';
+    background: url('../img/icon-ethereum.svg') no-repeat center;
+    width: 11px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 5px;   
+}
+
+.price {
+    color: var(--primary-medium);;
+}
+
+.days-left::before {
+    content: '';
+    background: url('../img/icon-clock.svg') no-repeat center;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.days-left {
+    color: var(--primary-soft);
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+}
+
+.text {
+    padding: 10px;
+    color: white;
+}
+
+.name {
+    color: aliceblue;
+}

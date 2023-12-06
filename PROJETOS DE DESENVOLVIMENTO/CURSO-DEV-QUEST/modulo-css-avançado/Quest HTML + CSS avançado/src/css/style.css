@@ -1,0 +1,84 @@
+body {
+    background-color: var(--violet);
+    height: 100vh;
+}
+
+.cabecalho {
+    padding: 50px;
+}
+
+.cabecalho img {
+    width: 20%;
+}
+
+.main {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.center {
+    display: flex;
+    padding: 50px;
+}
+
+.center .imagem img {
+    width: 50vw;
+}
+
+.center .texto {
+    padding: 40px;
+}
+
+.center .texto .texto2 {
+    color: white;
+    width: 30vw;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.center .texto p {
+    color: white;
+    padding: 30px 10px;
+    font-size: 20px;
+}
+
+.center .btn {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 8px 12px 36px -12px rgba(0,0,0,0.75);
+}
+
+.center .btn:hover {
+    background-color: var(--soft-magenta);
+    color: white;
+    transition: 0.5s;
+}
+
+.center .btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--violet);
+    font-weight: 600;
+    width: 200px;
+    height: 50px;
+}
+
+.center .btn a:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.social {
+    display: flex;
+    justify-content: end;
+    padding-right: 100px;
+}
+
+.social a img{
+    padding-left: 15px;
+    width: 100px;
+}
+

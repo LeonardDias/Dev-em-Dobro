@@ -1,4 +1,7 @@
 /* DIRECTION */
+p {
+    text-align: justify;
+}
 
 .container1 {
     display: flex;

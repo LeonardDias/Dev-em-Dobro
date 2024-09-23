@@ -27,14 +27,18 @@ p {
 
 .bg-fixed {
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 513px;
 }
 
 .bg-position {
-    /* background-position: bottom right;
-    background-repeat: no-repeat; */
+    background-position: bottom right;
+    background-repeat: no-repeat;
     height: 540px;
+}
+
+.bg-shorthand {
     background: black url('./images/cat.png') no-repeat right top;
-
-
+    height: 540px;
 }

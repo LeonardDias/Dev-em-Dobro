@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,72 +9,104 @@
 </head>
 <body>
     <h1>Flex Container - Justify content</h1>
-    <p>A propriedade justify-content é usada para alinhar os itens (itens flexíveis) dentro de um contêiner flexível ao longo do eixo principal (main axis). O eixo principal pode ser horizontal (quando a flex-direction é row) ou vertical (quando a flex-direction é column). Existem várias opções de alinhamento disponíveis para a propriedade justify-content.</p>
-
+    <p>
+        Aqui iremos aprender sobre a PROPRIEDADE JUSTIFY-CONTENT e seus VALORES.
+    </p>
+    <p>
+        A propriedade justify-content é usada para alinhar os itens (FLEX-ITENS) dentro de um contêiner flexível ao longo do eixo principal (main axis). O eixo principal pode ser horizontal (quando a flex-direction é row) ou vertical (quando a flex-direction é column). Existem várias opções de alinhamento disponíveis para a propriedade justify-content.
+    </p>
+    <p>
+        O JUSTIFY-CONTENT só irá alinhar os FLEX-ITENS HORIZONTALMENTE.
+    </p>
+    <img src="./img/imagem flexbox.png" alt="Imagem Flexbox">
+    <p>
+        Aqui iremos visualizar os FLEX-ITENS, então fique atento que o JUSTIFY-CONTENT irá apenas o que esta dentro do quadrado LARANJA, para alinhar o QUADRADO AZUL você utilizara o FLEX-DIRECTION (ROW, ROW-REVERSE, COLUMN, COLUMN-REVERSE), compare sempre a imagem acima à explicação abaixo para entender melhor.
+    </p>
+    
     <section>
         <h2>Flex-start</h2>
-        <p>Alinha os itens no início do eixo principal.</p>
+        <p>
+            Alinha os flex-itens no início do eixo principal dentro do CONTAINER. Esse é o valor PADRÃO e tendo o FLEX-DIRECTION no ROW irá começar da ESQUERDA para a DIREITA.
+        </p>
 
-        <div class="container flex-start">
-            <div class="item item1">1</div>
-            <div class="item item2">2</div>
-            <div class="item item3">3</div>
-        </div>
+        
+            <fieldset class="container flex-start">
+                <legend>Container</legend>
+                <div class="item item1">Flex-Items 1</div>
+                <div class="item item2">Flex-Items 2</div>
+                <div class="item item3">Flex-Items 3</div>
+            </fieldset>
+        
     </section>
 
     <section>
         <h2>Flex-end</h2>
-        <p>Alinha os itens no final do eixo principal.</p>
+        <p>
+            Alinha os flex-itens no final do eixo principal. Tendo o FLEX-DIRECTION no ROW irá começar da DIREITA para a ESQUERDA. Aqui se utilizarmos o FLEX DIRECTION ROW-REVERSE ele irá inverter o FLEX-START passa a ser o FLEX-END e o FLEX-END passa a ser o FLEX-START.
+        </p>
 
-        <div class="container flex-end">
-            <div class="item item1">1</div>
-            <div class="item item2">2</div>
-            <div class="item item3">3</div>
-        </div>
+        <fieldset class="container flex-end">
+            <legend>Container</legend>
+            <div class="item item1">Flex-Items 1</div>
+            <div class="item item2">Flex-Items 2</div>
+            <div class="item item3">Flex-Items 3</div>
+        </fieldset>
     </section>
 
     <section>
         <h2>Center</h2>
-        <p>Centraliza os itens ao longo do eixo principal.</p>
+        <p>
+            Centraliza os flex-itens ao longo do eixo principal.
+        </p>
 
-        <div class="container center">
-            <div class="item item1">1</div>
-            <div class="item item2">2</div>
-            <div class="item item3">3</div>
-        </div>
+        <fieldset class="container center">
+            <legend>Container</legend>
+            <div class="item item1">Flex-Items 1</div>
+            <div class="item item2">Flex-Items 2</div>
+            <div class="item item3">Flex-Items 3</div>
+        </fieldset>
     </section>
 
     <section>
         <h2>Space-between</h2>
-        <p>Distribui os itens ao longo do eixo principal, deixando espaços iguais entre eles. O primeiro item fica no início e o último no final.</p>
+        <p>
+            Distribui os flex-itens ao longo do eixo principal, deixando espaços iguais entre eles. O primeiro item fica no início e o último no final.
+        </p>
 
-        <div class="container space-between">
-            <div class="item item1">1</div>
-            <div class="item item2">2</div>
-            <div class="item item3">3</div>
-        </div>
+        <fieldset class="container space-between">
+            <legend>Container</legend>
+            <div class="item item1">Flex-Items 1</div>
+            <div class="item item2">Flex-Items 2</div>
+            <div class="item item3">Flex-Items 3</div>
+        </fieldset>
     </section>
     
     <section>
         <h2>Space-around</h2>
-        <p>Distribui os itens ao longo do eixo principal, deixando espaços iguais ao redor deles. Isso significa que há espaço extra tanto no início quanto no final, bem como entre os itens.</p>
+        <p>
+            Distribui os flex-itens ao longo do eixo principal, deixando espaços iguais ao redor deles. Isso significa que há espaço extra tanto no início quanto no final, bem como entre os itens.
+        </p>
 
-        <div class="container space-around">
-            <div class="item item1">1</div>
-            <div class="item item2">2</div>
-            <div class="item item3">3</div>
-        </div>
+        <fieldset class="container space-around">
+            <legend>Container</legend>
+            <div class="item item1">Flex-Items 1</div>
+            <div class="item item2">Flex-Items 2</div>
+            <div class="item item3">Flex-Items 3</div>
+        </fieldset>
     </section>
 
     <section>
         <h2>Space-evenly</h2>
-        <p>Distribui os itens ao longo do eixo principal com espaços iguais entre eles e também nas extremidades.</p>
+        <p>
+            Distribui os flex-itens ao longo do eixo principal com espaços iguais entre eles e também nas extremidades.
+        </p>
 
-        <div class="container space-evenly">
-            <div class="item item1">1</div>
-            <div class="item item2">2</div>
-            <div class="item item3">3</div>
-        </div>
+        <fieldset class="container space-evenly">
+            <legend>Container</legend>
+            <div class="item item1">Flex-Items 1</div>
+            <div class="item item2">Flex-Items 2</div>
+            <div class="item item3">Flex-Items 3</div>
+        </fieldset>
     </section>
 </body>
 </html>

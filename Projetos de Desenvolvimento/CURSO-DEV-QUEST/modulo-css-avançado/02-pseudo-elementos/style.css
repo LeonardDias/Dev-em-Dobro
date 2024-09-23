@@ -8,17 +8,18 @@
 }
 
 .first-line::first-line {
-    color: coral
+    color: coral;
+    font-size: 2em;
 }
 
 .first-line::first-letter {
     color: blue;
+    font-size: 4em;
 }
 
 li::marker {
     color: red;
     font-size: 23px;
-
 }
 
 .before::before {

@@ -1,0 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Public Sans', sans-serif;
+}
+
+ul li {
+    list-style: none;
+}

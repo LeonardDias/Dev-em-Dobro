@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,84 +9,117 @@
 </head>
 <body>
     <h1>Flex Container - Align content</h1>
-    <p>O align-content é uma propriedade que controla como as linhas de itens flexíveis são alinhadas dentro de um flex container quando há espaço extra no eixo vertical (altura) disponível. Isso é relevante quando você tem várias linhas de itens flexíveis dentro do seu contêiner.</p>
+    <p>
+        O align-content é uma propriedade que controla como as linhas de itens flexíveis são alinhadas dentro de um flex container quando há espaço extra no eixo vertical (altura) disponível. Isso é relevante quando você tem várias linhas de itens flexíveis dentro do seu contêiner.
+    </p>
+    <p> 
+        Neste caso o ALIGN CONTENT ele irá alinhar os FLEX ITENS no espaço que sobra dentro do CONTAINER (EM LINHA) ficando completamente preenchido a linha do CONTAINER.
+    </p>
+    <p>
+        E é bastante parecido com JUSTIFY CONTENT, só que agora é no EIXO TRANSVERSAL (VERTICAL).
+    </p>
+
+    <img src="./img/imagem flexbox.png" alt="Imagem Flexbox">
+
     <section>
         <h2>Flex-start</h2>
-        <p>Este valor alinha as linhas de itens flexíveis no início do container.</p>
-        <div class="container flex-start">
+        <p>
+            Este valor alinha as linhas de itens flexíveis no início do container.
+        </p>
+        <fieldset class="container flex-start">
+            <legend>Container</legend>
             <div class="item item1">1</div>
             <div class="item item2">2</div>
             <div class="item item3">3</div>
-        </div>
+        </fieldset>
     </section>
 
     <section>
         <h2>Flex-end</h2>
-        <p>Alinha as linhas de itens flexíveis no final do container.</p>
-        <div class="container flex-end">
+        <p>
+            Alinha as linhas de itens flexíveis no final do container.
+        </p>
+        <fieldset class="container flex-end">
+            <legend>Container</legend>
                 <div class="item item1">1</div>
                 <div class="item item2">2</div>
                 <div class="item item3">3</div>
-        </div>
+        </fieldset>
     </section>
 
     <section>
         <h2>Center</h2>
-        <p>Centraliza as linhas de itens flexíveis verticalmente dentro do container.</p>
-        <div class="container center">
+        <p>
+            Centraliza as linhas de itens flexíveis verticalmente dentro do container.
+        </p>
+        <fieldset class="container center">
+            <legend>Container</legend>
                 <div class="item item1">1</div>
                 <div class="item item2">2</div>
                 <div class="item item3">3</div>
-        </div>
+        </fieldset>
     </section>
 
     <section>
         <h2>Stretch</h2>
-        <p>Este valor estica as linhas de itens flexíveis para preencher o espaço vertical disponível no container.</p>
-        <div class="container stretch">
+        <p>
+            Este valor estica as linhas de itens flexíveis para preencher o espaço vertical disponível no container.
+        </p>
+        <fieldset class="container stretch">
+            <legend>Container</legend>
                 <div class="item item1">1</div>
                 <div class="item item2">2</div>
                 <div class="item item3">3</div>
-        </div>
+        </fieldset>
     </section>
 
     <section>
         <h2>Space-between</h2>
-        <p>Distribui igualmente o espaço disponível entre as linhas de itens flexíveis, mas não há espaço extra no topo ou na parte inferior.</p>
-        <div class="container space-between">
-                <div class="item item1">lorem ipsum dolor</div>
-                <div class="item item2">lorem ipsum</div>
-                <div class="item item3">3</div>
+        <p>
+            Distribui igualmente o espaço disponível entre as linhas de itens flexíveis, mas não há espaço extra no topo ou na parte inferior.
+        </p>
+        <fieldset class="container space-between">
+            <legend>Container</legend>
+                <div class="item item1">Lorem ipsum dolor sit amet consect</div>
+                <div class="item item2">Lorem ipsum dolor sit amet consec.</div>
+                <div class="item item3">Lorem ipsum dolor sit amet consect</div>
                 <div class="item item4">4</div>
                 <div class="item item5">5</div>
                 <div class="item item6">6</div>
-        </div>
+        </fieldset>
     </section>
 
         <section>
         <h2>Space-around</h2>
-        <p>Distribui igualmente o espaço disponível ao redor de cada linha de itens flexíveis, criando espaço adicional nas extremidades superior e inferior.</p>
-        <div class="container space-around">
-                <div class="item item1">lorem ipsum dolor</div>
-                <div class="item item2">lorem ipsum</div>
-                <div class="item item3">3</div>
+        <p>
+            Distribui igualmente o espaço disponível ao redor de cada linha de itens flexíveis, criando espaço adicional nas extremidades superior e inferior.
+        </p>
+        <fieldset class="container space-around">
+            <legend>Container</legend>
+                <div class="item item1">Lorem ipsum dolor sit amet consect</div>
+                <div class="item item2">Lorem ipsum dolor sit amet consect</div>
+                <div class="item item3">Lorem ipsum dolor sit amet consect</div>
                 <div class="item item4">4</div>
                 <div class="item item5">5</div>
                 <div class="item item6">6</div>
-        </div>
+                
+        </fieldset>
     </section>
 
     <section>
         <h2>Space-evenly</h2>
-        <p>Distribui igualmente o espaço disponível entre as linhas de itens flexíveis e também cria espaço adicional na parte superior e inferior do container.</p>
-        <div class="container space-evenly">
-                <div class="item item1">lorem ipsum dolor</div>
-                <div class="item item2">lorem ipsum</div>
-                <div class="item item3">3</div>
+        <p>
+            Distribui igualmente o espaço disponível entre as linhas de itens flexíveis e também cria espaço adicional na parte superior e inferior do container.
+        </p>
+        <fieldset class="container space-evenly">
+            <legend>Container</legend>
+                <div class="item item1">Lorem ipsum dolor sit amet consect</div>
+                <div class="item item2">Lorem ipsum dolor sit amet consect</div>
+                <div class="item item3">Lorem ipsum dolor sit amet consect</div>
                 <div class="item item4">4</div>
                 <div class="item item5">5</div>
                 <div class="item item6">6</div>
-        </div>
+        </fieldset>
     </section>
 
 </body>

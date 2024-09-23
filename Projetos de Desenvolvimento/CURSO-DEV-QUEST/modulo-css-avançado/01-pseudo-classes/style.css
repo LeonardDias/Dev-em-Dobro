@@ -2,25 +2,30 @@
     propriedade: valor;
 } */
 
-/* p:first-child {
-    color: aquamarine;
+p:first-child {
+    color: green;
 }
 
 p:last-child {
     color: blueviolet;
 }
 
-p:not(.padrao) {
+/* p:not(.padrao) {
     color: yellow;
 } */
 
-/* p:nth-child(even) {
+/* p:nth-child(1) {
     color: red;
 } */
 
-/* li:nth-child(odd) {
+
+li:nth-child(even) {
     color: blue;
-} */
+}
+
+/* li:nth-child(n+2):nth-child(-n+5) {
+    color: red;
+}  */
 
 li:nth-last-child(1) {
     color: blueviolet;

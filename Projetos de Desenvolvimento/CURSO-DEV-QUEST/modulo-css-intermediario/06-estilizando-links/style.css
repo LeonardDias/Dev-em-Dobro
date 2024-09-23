@@ -1,8 +1,14 @@
 a {
     cursor: progress;
     margin: 20px;
-    padding: 10px;
     font-style: italic;
+    transition: color 3s ease-in-out;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 a:visited {
@@ -15,5 +21,5 @@ a:active {
 
 a:hover {
     background-color: red;
-    color: white;
+    color: blue;
 }

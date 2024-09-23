@@ -1,0 +1,49 @@
+body {
+    background-color: var(--background-color);
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.foto {
+    max-width: 100px;
+    border-radius: 50%;
+    padding-bottom: 15px;
+}
+
+.informacoes {
+    padding: 30px;
+}
+
+.dados {
+    padding-bottom: 15px;
+}
+
+hr {
+    border: 2px solid;
+    color: var(--text-color);
+}
+
+.contadores {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+span {
+    color: var(--text-color);
+    font-weight: 700;
+}
+

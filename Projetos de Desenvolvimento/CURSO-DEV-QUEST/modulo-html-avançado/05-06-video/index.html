@@ -7,19 +7,28 @@
 </head>
 <body>
     <h1>Vídeo</h1>
-    <!-- NESTE CASO SE APLICA DA MESMA FORMA QUE NA AULA 04-AUDIO, OU SEJA FORMA ANTIGA -->
-    <!-- <video src="./videos/video.mp4" controls width="50%" height="50%" loop poster="./images/thumb.jpg"></video> -->
 
-    <!-- NESTE CASO NÃO É MUITO VIAVEL POIS CUSTA MUITO ESPAÇO NO SERVIDOR -->
-        <!-- <Video controls width="300">
+    <p>
+        Aqui iremos aprender a colocar vídeos e de 3 formas:
+    </p>
+    <p>
+        1ª Essa é a forma mais antiga e parecida como a aula anterior de como colocar um audio. Usamos a TAG VIDEO e podemos ou não colocar os atributos de CONTROLS, WIDTH e HEIGHT, LOOP e colocamos POSTER="CAMINHO DA THUMB SALVO NA PASTA". E fecha a TAG VIDEO.
+    </p>
+    <video src="./videos/video.mp4" controls width="50%" height="50%" loop  poster="./images/thumb.jpg"></video>
+<br>
+    <p>
+        2ª Essa é uma segunda forma que pode até ser usada, mas a maior disvantagem que assim como a 1ª forma é que se você tiver muitos vídeos na sua pasta isso irá consumir muito espaço no servidor, aumentando assim o valor da hospedagem. E também é parecido com a forma de aplicarmos os audios.
+    </p>
+
+    <Video controls width="50%">
         <source src="./videos/video.mp4" type="video/mp4">
         <source src="./videos/video.webm" type="video/webm">
         <p>Esse navegador não tem suporte a TAG VIDEO</p>
-    </Video> -->
-
-    <!-- O IDEAL É COLOCAR O VIDEO NO YOUTUBE, ETC E DEPOIS SÓ COLOCAR O LINK AQUI -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/T_BHL-h0fxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
+    </Video>
+<br>
+    <p>
+        3ª Essa é a melhor forma utilizada bastando ir na plataforma de onde o vídeo está hospedado e compartilhar clicando em INCORPORAR, copiar o link, colar aqui. Maior vantagem é que não ocupa espaço no servidor, porém maior desvantagem é que se a plataforma cair o link vai ficar com erro.
+    </p>
+    <iframe width="600px" height="600px" src="https://www.youtube.com/embed/T_BHL-h0fxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </body>
 </html>

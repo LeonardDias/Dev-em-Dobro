@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +9,26 @@
 </head>
 <body>
     <h1>Seletores</h1>
+    <p>
+        Vamos dar uma olhada agora nas configurações dos SELETORES. E aqui já podemos configurar o H1 na CSS ficando desta forma: h1 {color: green;}. Preste atenção pois escolhendo apenas SELETORES de TAGS você irá configurar TODAS as TAGS H1 da página. Por isso usamos mais ID e CLASS, pois podemos dar nomes a elas e configurar individualmente.
+    </p>
+<hr>
+    <h2>Estilização com Classes CLASS</h2>
+    <p class="paragrafo">
+        Aqui iremos aprender a classificar as CLASS e dar um nome a ela para configurarmos na CSS. Então 1º damos um nome a ela EX: class="paragrafo" e depois na CSS iremos começar a estilização colocando um ponto (.) seguido do nome da CLASS EX: .paragrafo {color: blue;}. Ou seja toda TAG que tiver a CLASS="paragrafo ficará com as letras azul"
+    </p>
 
-    <h2>Estilização com Classes</h2>
-    <p class="paragrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, commodi aspernatur. Veritatis excepturi cupiditate eum, inventore ea facilis delectus consequatur voluptatem. Ea doloremque ipsum amet itaque dolores debitis nobis quis?</p>
-
-    <span class="paragrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum voluptatibus veritatis reiciendis, magni accusantium nesciunt beatae? Expedita unde dignissimos soluta corporis. Rem iure debitis odio ut ipsam, quos aut mollitia.</span>
-    
+    <span class="paragrafo">
+        Aqui vemos que mesmo a TAG sendo um SPAN elá está azul, pois recebeu a CLASS="PARAGRAFO".
+    </span>
+<hr>
     <h2>Estilização com ID</h2>
+    <p>
+        Aqui vamos estilizar com ID que basicamente o que muda com relação ao CLASS é que lá você faz uma configuração e coloca em vários TAGS que quiser. Já no ID não, ela é específica pra cada TAG que você quiser configurar. A W3C diz que não é bom colocar ID repetidas e sim utilizar apenas uma ID por página. Isso nos informa que você pode criar varias ID por páginas mas como nomes diferentes. ATENÇÃO: O ID é mais utilizado para o JAVASCRIPT, mas não impede de você utlizar, o conselho é utilize mais CLASS para estilização e ID para JAVASCRIPT.
+    </p>
+    <p>
+        E para utiliza-las começamos com a # seguida do nome do seletor. EX: #menu {margin-left: 500px;}.
+    </p>
     <nav id="menu">
         <ul>
             <li>Sobre</li>
@@ -23,35 +36,76 @@
             <li>Projetos</li>
         </ul>
     </nav>
-
+<hr>
     <h2>Estilização com duas Classes</h2>
+    <p>
+        Aqui iremos colocar duas classes no mesmo CLASS da seguinte forma, EX: CLASS="titulo vermelho", e neste caso apenas separamos com um espaço. E para a utilização na CSS colocamos desta forma, EX: 
+        .titulo.vermelho {color: red;}, veja que na CSS não separamos com espaço e sim com (.) e os nomes tudo junto.
+    </p>
+    <p>
+        Você também pode averiguar que na CSS existe apenas um seletor chamado de .título com font-size 50px e isso nos diz ambos os H3 irão receber este tamanho pois tem as classes igual. Ou seja em vez de colocar o font-size nas configurações dos dois VERMELHO / LARANJA colocamos apenas no TITULO. 
+    </p>
     <h3 class="titulo vermelho">Título 1 com duas classes</h3>
     <h3 class="titulo laranja">Título 2 com duas classes</h3>
-
-    <h2>Estilização com virgula</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eum minima maiores autem culpa, porro omnis est quasi quibusdam modi voluptatibus dignissimos veritatis molestiae tenetur error repellendus. Rem, aliquid dolorum!</p>
-    <span>SPAN</span>
-
-    <h2>Estilização com classe filha</h2>
+<hr>
+    <div class="div">
+        <h2>Estilização da página</h2>
+        <p>
+            Podemos fazer uma configuração geral da página utilizando o seletor *, e desta forma configurará toda a página. Neste exemplo CRIAMOS uma CSS chamada RESET e linkamos com o HTML e colocamos lá as seguintes configurações: * {padding: 0; font-size: 30px;} e desta forma está dizendo que todos os elementos da página terá o PADDING ZERO e o tamanho da letra será 30PX.
+        </p>
+        <p>
+            Podemos também configurar as TAGS HTML, HEAD, BODY separadamente. Atente que se você configurar a TAG BODY o que está em HEAD não receberá a estilização, pois HEAD está fora do BODY.
+        </p>
+    </div>
+<hr>
+    <h2>Estilização com vírgula</h2>
+    <p>
+        Podemos configurar várias TAGS sem CLASS e ID diretamente separando apenas com uma virgula, EX: p, span {font-size: 30px; text-align: justify;}, e neste caso a estilização está nos informado que TODAS as TAGS P e SPAN da página irão receber o tamanho da fonte de 30px e o texto alinhado justificado.
+    </p>
+    <span>
+        Confirmação da informação acima.
+    </span>
+    <p>
+        Você também pode confirgurar qualquer título de seletor desta forma, basta seguir as configurações. Isso evita criar menos código para configurações iguais e sebemos que menos códigos é melhor.
+    </p>
+<hr>
+    <h2>Estilização de classe pai com classe filho</h2>
     <section class="sobre">
         <p class="texto">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores aperiam porro qui incidunt cupiditate at voluptate corrupti unde adipisci. Rem fuga est excepturi! Architecto libero magnam natus! Odit, earum natus.
+            Neste exemplo iremos estilizar as CLASS de forma parecida com a Estilização com duas Classes, sendo que aqui como uma class está dentro da outra separamos os seletores com um espaço ficando da seguinte forma: .sobre .texto {color: palevioletred;} e o texto irá ficar na cor palevioletred.
         </p>
+        <P>
+            Colocamos a estilização da CLASS SOBRE com uma cor de background de blanchedalmond e na CLASS TEXTO uma cor palevioletred e background color azul e  podemos ver que a o backgroundo do filho ficou como estilizado, mas este PARAGRAFO que não recebeu uma CLASS continua com o BACKGROUND da CLASS PAI (SOBRE).
+        </P>
     </section>
-
-    <h2>Estilização com Seletor ></h2>
+<hr>
+    <h2>Estilização com Seletor (>)</h2>
         <div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis ipsam explicabo voluptates ratione delectus? Voluptas assumenda facilis aperiam dolore iure, reprehenderit eaque expedita blanditiis ad saepe voluptatum quod nemo sapiente.</p>
+            <p>
+                Aqui quando colocamos o sinal de > ionformamos que estamos selecionando todos os filhos dentro do pai, neste caso temos um DIV pai e dois filhos que são P. Ex: div > p {color: royalblue;}
+                Então logo vemos que todos os P dentro da DIV receberam as configurações de cor royalblue.
+            </p>
 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis est facilis quidem porro cumque! Distinctio quas facere nihil reiciendis nostrum eius eaque, incidunt deleniti perspiciatis harum adipisci expedita, hic similique?</p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis est facilis quidem porro cumque! Distinctio quas facere nihil reiciendis nostrum eius eaque, incidunt deleniti perspiciatis harum adipisci expedita, hic similique?
+            </p>
         </div>
-
-    <h2>Estilização com Seletor +</h2>
-        <div>123</div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga iste laudantium esse at voluptatibus tempora eius ipsam beatae a error commodi labore sed, qui voluptates dolor animi, corporis est?</p>
-
+<hr>
+    <h2>Estilização com Seletor (+)</h2>
+        <div>123456789</div>
+        <p>
+            Aqui a estilização irá escolher o 1º elemento depois ou seja a TAG P depois da TAG aqui, que neste caso é a DIV, ou seja ela é uma TAG irmã. EX: div + p {color: aqua;}. pois como a DIV abre e fecha com os números e o P abre e fecha com o texto e não estão dentro de um pai, logo são irmãos.
+        </p>
+<hr>
     <h2>Estilização com atributo</h2>
+    <p>
+        Aqui de forma simples e direta você irá configurar com o ATRIBUTO da TAG. Neste caso escolhemos o TARGET de um e o HREF de outro e as configurções ficaram assim: a[target=_blank] {color: red;}
+        a[href="google.com"] {color: chartreuse;}
+    </p>
     <a href="/" target="_blank">Clique aqui</a>
     <a href="google.com">Clique aqui</a>
+    <p>
+        E neste caso todos os TARGET=_BLANK e HREF="GOOGLE.COM" recebeão as cores escolhidas na CSS.
+    </p>
 </body>
 </html>

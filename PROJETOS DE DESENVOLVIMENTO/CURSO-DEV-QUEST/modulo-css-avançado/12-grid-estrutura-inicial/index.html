@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <h1>INTRODUÇÃO AO GRID</h1>
+    <h2>PROPRIEDADE GRID</h2>
+    <p>
+        Aqui iremos começar a ver o DISPLAY: GRID. Basicamente ele começa como o FLEXBOX ou seja um CONTAINER PAI e SEUS FILHOS dentro dele. Aqui temos basicamente como BLOCK LEVEL, cada célula ocupando todo o espaço em linha do CONTAINER.
+    </p>
+    <fieldset class="grid1">
+        <legend>CONTAINER</legend>
+        <div>célula 1</div>
+        <div>célula 2</div>
+        <div>célula 3</div>
+        <div>célula 4</div>
+        <div>célula 5</div>
+        <div>célula 6</div>
+        <div>célula 7</div>
+    </fieldset>
+    <hr>
+    <h2>PROPRIEDADE INLINE-GRID</h2>
+    <p>
+        Aqui veremos a ver o DISPLAY: INLINE-GRID. Que basicamente é o GRID só que com a função INLINE, ocupando apenas o espaço do INLINE LEVEL.
+    </p>
+    <fieldset class="grid2">
+        <legend>CONTAINER</legend>
+        <div>célula 1</div>
+        <div>célula 2</div>
+        <div>célula 3</div>
+        <div>célula 4</div>
+        <div>célula 5</div>
+        <div>célula 6</div>
+        <div>célula 7</div>
+    </fieldset>
+    <hr>
+    <h2>PROPRIEDADE GRID-TEMPLATE-COLUMNS</h2>
+    <p>
+        Aqui veremos a ver como dar COLUNAS ao CONTAINER. Utilizando a PROPRIEDADE GRID-TEMPLATE-COLUMNS e os valores a escolher podemos criar quantas colunas desejarmos. Vamos ver o exemplo AUTO.
+    </p>
+    <p>
+        Aqui criei no GRID3, criei 4 COLUNAS com AUTO (divide o valor do espaçamento (WHIDTH) dentro do CONTAINER automaticamente), porém você pode escolher qualquer unidade de medida. EX: %, PX, EM, REM, no NOTION tem imagens com exemplos. 
+    </p>
+    <fieldset class="grid3">
+        <legend>CONTAINER</legend>
+        <div>célula 1</div>
+        <div>célula 2</div>
+        <div>célula 3</div>
+        <div>célula 4</div>
+        <div>célula 5</div>
+        <div>célula 6</div>
+        <div>célula 7</div>
+    </fieldset>
+    <hr>
+    <h2>PROPRIEDADE GRID-TEMPLATE-ROWS</h2>
+    <p>
+        Aqui veremos a ver como dar LINHAS ao CONTAINER. Utilizando a PROPRIEDADE GRID-TEMPLATE-ROWS e os valores a escolher podemos criar quantas colunas desejarmos. Vamos ver o exemplo AUTO.
+    </p>
+    <p>
+        Aqui criei no GRID4, criei 3 LINHAS com unidades de medidas diferentes. ATENÇÃO: Ele APLICA o VALOR da PROPRIEDADE apenas nas linhas informadas, ou seja como na imagem abaixo que informei 3 valores diferentes. 
+    </p>
+    <fieldset class="grid4">
+        <legend>CONTAINER</legend>
+        <div>célula 1</div>
+        <div>célula 2</div>
+        <div>célula 3</div>
+        <div>célula 4</div>
+        <div>célula 5</div>
+        <div>célula 6</div>
+        <div>célula 7</div>
+    </fieldset>
+</body>
+</html>

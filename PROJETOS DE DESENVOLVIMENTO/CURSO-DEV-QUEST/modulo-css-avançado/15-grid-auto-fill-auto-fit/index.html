@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID - AUTO FILL - AUTO FIT</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <h1>GRID - AUTO FILL - AUTO FIT</h1>
+    <p>
+        Aqui iremos aprender sobre o AUTO FILL e o AUTO FIT, vamos lá, criaremos primeiro a base HTML e CSS inicial.
+        <br>
+        Com essas PROPRIEDADES não haverá a necessidade de CRIAR MEDIAS QUERIES para os GRIDS, ficará de forma mais simples.
+    </p>
+    <p>
+        Basicamente ambos irão se comportar da mesma forma no RESPONSIVO, alinhando-se conforme a tela fica menor. Porém quando a tela ficar maior notará a diferença.
+    </p>
+    <hr>
+    <h2>AUTO-FILL</h2>
+    <p>
+        Aqui iremos ver como se comporta o AUTO-FILL. O comportameno de ambos são iguais em telas MENORES (RESPONSIVO), porém quando a tela ficar maior aqui no AUTO-FILL irá respeitar o tamanho máximo delimitado no MINMAX, que neste caso é 200px, ou seja ira gerar espaços livres no final do CONTAINER.
+    </p>
+    <fieldset class="container1">
+        <legend>CONTAINER</legend>
+        <div class="item">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ea magni eligendi amet, repellat corporis magnam deleniti dolore maxime error illum nulla hic laborum, harum voluptatum illo ratione dicta quibusdam.
+            </p>
+        </div>
+        <div class="item">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ea magni eligendi amet, repellat corporis magnam deleniti dolore maxime error illum nulla hic laborum, harum voluptatum illo ratione dicta quibusdam.
+            </p>
+        </div>
+        <div class="item">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ea magni eligendi amet, repellat corporis magnam deleniti dolore maxime error illum nulla hic laborum, harum voluptatum illo ratione dicta quibusdam.
+            </p>
+        </div>
+        <div class="item">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ea magni eligendi amet, repellat corporis magnam deleniti dolore maxime error illum nulla hic laborum, harum voluptatum illo ratione dicta quibusdam.
+            </p>
+        </div>
+        <div class="item">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ea magni eligendi amet, repellat corporis magnam deleniti dolore maxime error illum nulla hic laborum, harum voluptatum illo ratione dicta quibusdam.
+            </p>
+        </div>
+    </fieldset>
+    <hr>
+    <h2>AUTO-FIT</h2>
+    <p>
+        Aqui iremos ver como se comporta o AUTO-FIT. O comportameno de ambos são iguais em telas MENORES (RESPONSIVO), porém quando a tela ficar maior aqui no AUTO-FIT os ITENS irão se adequar ao que foi colocado no MINMAX, que neste caso é 200px, 1fr, porém irão se adequar totalmente ao tamanho do CONTAINER.
+    </p>
+    <fieldset class="container2">
+        <legend>CONTAINER</legend>
+        <div class="item">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ea magni eligendi amet, repellat corporis magnam deleniti dolore maxime error illum nulla hic laborum, harum voluptatum illo ratione dicta quibusdam.
+            </p>
+        </div>
+        <div class="item">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ea magni eligendi amet, repellat corporis magnam deleniti dolore maxime error illum nulla hic laborum, harum voluptatum illo ratione dicta quibusdam.
+            </p>
+        </div>
+        <div class="item">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ea magni eligendi amet, repellat corporis magnam deleniti dolore maxime error illum nulla hic laborum, harum voluptatum illo ratione dicta quibusdam.
+            </p>
+        </div>
+        <div class="item">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ea magni eligendi amet, repellat corporis magnam deleniti dolore maxime error illum nulla hic laborum, harum voluptatum illo ratione dicta quibusdam.
+            </p>
+        </div>
+        <div class="item">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum ea magni eligendi amet, repellat corporis magnam deleniti dolore maxime error illum nulla hic laborum, harum voluptatum illo ratione dicta quibusdam.
+            </p>
+        </div>
+    </fieldset>
+</body>
+</html>

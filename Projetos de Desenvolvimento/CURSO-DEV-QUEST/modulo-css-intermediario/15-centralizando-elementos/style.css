@@ -29,6 +29,11 @@ body{
     line-height: 250px;
 }
 
+P {
+    
+    color: black;
+}
+
 .texto-centralizado-2 {
     position: absolute;
     top: 50%;

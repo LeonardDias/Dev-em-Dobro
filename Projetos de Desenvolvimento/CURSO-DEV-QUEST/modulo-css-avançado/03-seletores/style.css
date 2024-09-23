@@ -1,5 +1,6 @@
 h1 {
     color: green;
+    font-size: 3em;
 }
 
 .paragrafo {
@@ -7,7 +8,7 @@ h1 {
 }
 
 #menu {
-    margin-left: 100px;
+    margin-left: 500px;
 }
 
 .titulo {
@@ -22,16 +23,27 @@ h1 {
     color: orange;
 }
 
+.div{
+    background-color: aquamarine;
+}
+
 p, span {
-    font-size: 10px;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.sobre {
+    background-color: blanchedalmond;
 }
 
 .sobre .texto {
     color: palevioletred;
+    background-color: blue;
 }
 
 div > p {
     color: royalblue;
+    background-color: violet;
 }
 
 div + p {

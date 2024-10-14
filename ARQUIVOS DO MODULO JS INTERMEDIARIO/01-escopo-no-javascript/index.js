@@ -53,13 +53,10 @@ function falar() {
   console.log(falarOutraCoisa);
 }
 
-falar(); /* Output: 
-
-Seja bem-vindo!
-ƒ falarOutraCoisa() {
-    
-  }
-
-*/
-
+falar(); 
 console.log(falarOutraCoisa); // Não é exibido
+
+console.log(url);
+
+
+

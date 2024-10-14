@@ -28,4 +28,4 @@ const incentivarQuester = (nomeQuester) =>
     "Parabéns, " + nomeQuester + ", você chegou ao módulo de JS Intermediário!"
   );
 
-incentivarQuester("Lichtle");
+incentivarQuester("Leonard");

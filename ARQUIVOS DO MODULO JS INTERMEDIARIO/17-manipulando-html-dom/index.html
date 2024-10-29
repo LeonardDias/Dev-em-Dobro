@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando DOM e HTML</title>
+</head>
+<body>
+    <h1>Posts do X</h1>
+
+    <article class="post">
+        <p><strong>Leonard Dias</strong><span> @leonardk99 - 10 min</span></p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure odit exercitationem quis deserunt, voluptatum quibusdam sed nobis iste totam eos vel quaerat dolor non dolores inventore labore nulla animi nihil!
+        </p>
+
+        <br>
+
+        <div class="comentarios">
+            <h3>Comentários:</h3>
+
+            <input name="novo-comentario" type="text" placeholder="Digite o seu comentário">
+            <button onclick="adicionarComentario()">Adicionar comentário</button>
+
+            <br>
+
+            <div id="novos-comentarios"></div>
+        </div>
+    </article>
+
+    <footer>
+        <p>Confira os comentários no código e o Console através do Inspecionar (F12) para entender o conteúdo! ^-^</p>
+    </footer>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

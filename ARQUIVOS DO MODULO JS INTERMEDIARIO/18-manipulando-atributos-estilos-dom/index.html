@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Atributos e Estilos com o DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Manipulando Atributos e Estilos com o DOM</h1>
+    <button onclick="alterarCorDeFundoPrimeiroPost()">Alterar cor de fundo primeiro post</button>
+    <br>
+    <br>
+    <button onclick="aumentarFonteSegundoPost()">Aumenta a fonte do segundo post</button>
+    <article class="post">
+        <p><strong>Leonard Dias</strong> <span>@leonardk99 - 10 min</span></p>
+        <p class="texto-post">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsa est officiis totam consectetur quidem cumque exercitationem aperiam fugit perferendis. Ad quos inventore accusantium eum voluptates nisi facilis nobis animi!
+        </p>
+        <br>
+    </article>
+    <article class="post">
+        <p><strong>Leonard Dias</strong> <span>@leonardk99 - 20 min</span></p>
+        <p class="texto-post">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptatibus nihil, fugiat ipsum hic perspiciatis praesentium totam quam, architecto, fugit eos voluptatem molestias non dolor voluptas. Hic vitae fugit error.
+        </p>
+    </article>
+    <h2>Manipulando os atributos</h2>
+    <button onclick="marcarRadio('F')">Marcar radio feminino</button>
+    <button onclick="marcarRadio('M')">Marcar radio masculino</button>
+    <br>
+    <br>
+    Feminino <input type="radio" name="genero" id="genero-feminino">
+    Masculino <input type="radio" name="genero" id="genero-masculino">
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
